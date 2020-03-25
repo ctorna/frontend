@@ -1,0 +1,19 @@
+1) Load business Cards Category.json file locally or remotely on business card product.
+  state.businessCardsJson
+  getter.types.businessCardsJson(state)
+
+2)Load selected Business card json file and do following
+  2.1) init with default selected values.
+  
+  2.2) calculate price
+
+
+3) 
+
+
+
+
+
+
+ToDo
+1)complete product details page
