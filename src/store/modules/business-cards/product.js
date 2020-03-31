@@ -1,11 +1,9 @@
 import * as types from '../../types';
 import businessCardsJson from './category-1.json';
-import bcardImages from './product-images.json';
 import { bcardConstants } from '../../../components/business-cards/mapArray';
 const state = {
     businessCardsJson,
     bcardConstants,
-    bcardImages,
     productJson: {},
     paperTreatments: [],
     printingSides: {},
@@ -66,10 +64,6 @@ const getters = {
     [types.BCARDS_MYPRODUCT]: state => {
 
         return state.myProduct;
-    },
-    [types.BCARDS_MYPRODUCT_IMAGES]: state => {
-
-        return state.myProduct.images;
     }
 
 
@@ -197,16 +191,13 @@ const mutations = {
         state.myProduct.wp_id = payload.wp_id;
         state.myProduct.id = payload.id;
         state.myProduct.label = payload.label;
-        state.myProduct.images = state.bcardImages[payload.wp_id]
+
     },
     /*used to make state changes reflective*/
     [types.MUTATION_BCARDS_DISCARD]: (state, payload) => {
-            state.myProduct.discard = payload;
-        }
-        /*used to set business cards images */
-        /* [types.MUTATION_BCARDS_MYPRODUCT_IMAGES]: (state, payload) => {
-            state.myProduct.images = state.bcardImages[payload];
-        } */
+        state.myProduct.discard = payload;
+    }
+
 
 
 };

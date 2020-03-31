@@ -35,13 +35,13 @@
         <div class="row gutters-1">
           <div class="col-12 col-lg-5">
             <div class="product-images-wrap d-none d-lg-block">
-              <div class="easyzoom-style mb-10" v-for="(image,key) in getProductImages" :key="key">
+              <div class="easyzoom-style mb-10" v-for="index in 6" :key="index">
                 <div class="easyzoom easyzoom--overlay">
                   <a
-                    :href="image"
+                    :href="getImageUrl(index)"
                   >
                     <img
-                      :src="image"
+                      :src="getImageUrl(index)"
                       
                     />
                   </a>
@@ -49,7 +49,7 @@
                 <span class="product-sale">Sale!</span>
                 <a
                   class="easyzoom-pop-up img-popup"
-                  :href="image"
+                  :href="getImageUrl(index)"
                 >
                   <i class="dlicon ui-1_zoom-in"></i>
                 </a>
@@ -831,13 +831,16 @@ export default {
   },
   methods: {
     ...mapActions({
-      setProductJson: types.ACTION_BCARDS_MYPRODUCTJSON
-    })
+      setProductJson: types.ACTION_BCARDS_MYPRODUCTJSON,
+      }),
+    getImageUrl(index){
+      return '/product-images/'+this.getMyProductJson.wp_id+'/'+index+'.jpg';
+    }
   },
   computed: {
     ...mapGetters({
       getMyProductJson: types.BCARDS_MYPRODUCTJSON,
-      getProductImages:types.BCARDS_MYPRODUCT_IMAGES
+      
     })
   },
   watch: {
