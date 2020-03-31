@@ -1,6 +1,8 @@
 <template>
   <section>
-    <template v-once ><span v-show="false">{{discard = setProductJson($route.params.id)}}</span></template>
+    <template v-once>
+      <span v-show="false">{{discard = setProductJson($route.params.id)}}</span>
+    </template>
     <div class="breadcrumb-area border-top-3 section-padding-1 breadcrumb-ptb-3">
       <div class="container-fluid">
         <div class="breadcrumb-content breadcrumb-font-inc">
@@ -32,18 +34,136 @@
       <div class="container-fluid">
         <div class="row gutters-1">
           <div class="col-12 col-lg-5">
-            <div class="easyzoom-style mb-10">
-              <div class="easyzoom easyzoom--overlay">
+            <div class="product-images-wrap d-none d-lg-block">
+              <div class="easyzoom-style mb-10" v-for="(image,key) in getProductImages" :key="key">
+                <div class="easyzoom easyzoom--overlay">
+                  <a
+                    :href="image"
+                  >
+                    <img
+                      :src="image"
+                      
+                    />
+                  </a>
+                </div>
+                <span class="product-sale">Sale!</span>
                 <a
-                  href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                  class="easyzoom-pop-up img-popup"
+                  :href="image"
                 >
+                  <i class="dlicon ui-1_zoom-in"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- For Mobile -->
+
+            <div class="product-details-tab d-lg-none">
+              <div class="pro-dec-big-img-slider">
+                <div class="easyzoom-style">
+                  <div class="easyzoom easyzoom--overlay">
+                    <a
+                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                    >
+                      <img
+                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <span class="product-sale">Sale!</span>
+                  <a
+                    class="easyzoom-pop-up img-popup"
+                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                  >
+                    <i class="dlicon ui-1_zoom-in"></i>
+                  </a>
+                </div>
+                <div class="easyzoom-style">
+                  <div class="easyzoom easyzoom--overlay">
+                    <a
+                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                    >
+                      <img
+                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <span class="product-sale">Sale!</span>
+                  <a
+                    class="easyzoom-pop-up img-popup"
+                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                  >
+                    <i class="dlicon ui-1_zoom-in"></i>
+                  </a>
+                </div>
+                <div class="easyzoom-style">
+                  <div class="easyzoom easyzoom--overlay">
+                    <a
+                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                    >
+                      <img
+                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <span class="product-sale">Sale!</span>
+                  <a
+                    class="easyzoom-pop-up img-popup"
+                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                  >
+                    <i class="dlicon ui-1_zoom-in"></i>
+                  </a>
+                </div>
+                <div class="easyzoom-style">
+                  <div class="easyzoom easyzoom--overlay">
+                    <a
+                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                    >
+                      <img
+                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                        alt
+                      />
+                    </a>
+                  </div>
+                  <span class="product-sale">Sale!</span>
+                  <a
+                    class="easyzoom-pop-up img-popup"
+                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                  >
+                    <i class="dlicon ui-1_zoom-in"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product-dec-slider-2 product-dec-small-style2">
+                <div class="product-dec-small active">
                   <img
                     src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
                     alt
                   />
-                </a>
+                </div>
+                <div class="product-dec-small">
+                  <img
+                    src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                    alt
+                  />
+                </div>
+                <div class="product-dec-small">
+                  <img
+                    src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                    alt
+                  />
+                </div>
+                <div class="product-dec-small">
+                  <img
+                    src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
+                    alt
+                  />
+                </div>
               </div>
-              <span class="product-sale">Sale!</span>
             </div>
           </div>
           <div class="col-12 col-lg-7 sidebar-active">
@@ -665,7 +785,7 @@
   </section>
 </template>
 <script>
-import { mapActions,mapGetters } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 import * as types from "../../store/types";
 import BusinessCardQuantity from "./Quantity";
 import BusinessCardPaper from "./Paper";
@@ -716,8 +836,9 @@ export default {
   },
   computed: {
     ...mapGetters({
-    getMyProductJson:types.BCARDS_MYPRODUCTJSON
-  })
+      getMyProductJson: types.BCARDS_MYPRODUCTJSON,
+      getProductImages:types.BCARDS_MYPRODUCT_IMAGES
+    })
   },
   watch: {
     $route() {
@@ -725,7 +846,7 @@ export default {
     }
   },
   mounted: function() {
-     console.log("route id is " + this.$route.params.id);
+    console.log("route id is " + this.$route.params.id);
     //this.setProductJson(this.$route.params.id);
     //console.log(this.$store.state.product.productJson);
     //eventBus.$emit('transparentHeaderClass',false);

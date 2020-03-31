@@ -366,6 +366,11 @@
 <script>
 import PageSidebar from "../shared/Sidebar.vue";
 export default {
+    data(){
+return {
+    
+}
+    },
     components:{
      PageSidebar   
     }
