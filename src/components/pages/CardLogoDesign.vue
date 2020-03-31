@@ -5,7 +5,7 @@
                 <div class="breadcrumb-content breadcrumb-font-inc">
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <router-link to="/">Home</router-link>
                         </li>
                         <li><span> > </span></li>
                         <li>

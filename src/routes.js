@@ -16,6 +16,7 @@ import Affiliate from './components/pages/Affiliate.vue';
 import CardLogoDesign from './components/pages/CardLogoDesign.vue';
 import ClientHappiness from './components/pages/ClientHappiness.vue';
 import Quote from './components/pages/Quote.vue';
+import Contact from './components/pages/Contact.vue';
 import Privacy from './components/pages/Privacy.vue';
 import Refer from './components/pages/ReferAndEarn.vue';
 import Refund from './components/pages/Refund.vue';
@@ -44,8 +45,9 @@ export const routes = [{
     { path: '/bcardsdesign', component: BcardsDesign },
     { path: '/affiliate', component: Affiliate },
     { path: '/cardlogodesign', component: CardLogoDesign },
-    { path: '/clienthappiness', component: ClientHappiness },
+    { path: '/clients-happiness-policy', component: ClientHappiness },
     { path: '/quote', component: Quote },
+    { path: '/contact', component: Contact },
     { path: '/privacy', component: Privacy },
     { path: '/referandearn', component: Refer },
     { path: '/refund', component: Refund },

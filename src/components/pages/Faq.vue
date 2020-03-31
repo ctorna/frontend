@@ -8,7 +8,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="index.html">Home </a>
+                            <router-link to="/">Home</router-link>
                         </li>
                         <li><span> > </span></li>
                         <li class="active"> Faq </li>

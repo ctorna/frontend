@@ -19,6 +19,26 @@
         
     };
     sidebarSearch();
+
+    /*====== Fixed Header ======*/
+    var header = $('.header-area');
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() > 5) {
+            header.addClass('stick');
+        } else {
+            header.removeClass('stick');
+        }
+    });
+
+    /*====== Close Menu ======*/
+    $(".navbar-toggler").click(function(){
+      $(this).toggleClass("active");
+    });
+
+    $(".main-menu .nav-menu li a i").click(function(){
+      $(this).toggleClass("active");
+      $(this).parent().next().slideToggle();
+    });
     
     /*====== SidebarCart ======*/
     function miniCart() {
@@ -81,7 +101,7 @@
     $('.main-slider-active').owlCarousel({
         loop: true,
         nav: false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
@@ -491,7 +511,7 @@
     })
     
     /*----------------------------
-    	Cart Plus Minus Button
+        Cart Plus Minus Button
     ------------------------------ */
     var CartPlusMinus = $('.cart-plus-minus');
     CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
@@ -579,8 +599,8 @@
     $('.categories-slider-active').owlCarousel({
         loop: true,
         nav: false,
-        autoplay: false,
-        autoplayTimeout: 5000,
+        autoplay: true,
+        autoplayTimeout: 4000,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         item: 3,
@@ -637,10 +657,8 @@
     $('.testimonial-active').owlCarousel({
         loop: true,
         nav: false,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
         item: 1,
         responsive: {
             0: {
@@ -654,6 +672,29 @@
             },
             992: {
                 items: 1
+            },
+        }
+    })
+
+    /*----- Testimonial -----*/
+    $('.testimonial-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        autoplay: true,
+        item: 1,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1,
+            },
+            769: {
+                items: 1
+            },
+            992: {
+                items: 2,
+                margin: 40
             },
         }
     })
@@ -688,7 +729,7 @@
     $('.banner-slider-active-3').owlCarousel({
         loop: true,
         nav: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
         item: 1,
@@ -767,6 +808,33 @@
             1601: {
                 items: 8
             },
+        }
+    })
+
+    /*----- Treatment Slider -----*/
+    $('.paper-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        margin:10,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            576: {
+                items: 2,
+            },
+            768: {
+                items: 2,
+            },
+            992: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+                autoplay: false
+            }
         }
     })
     
@@ -951,15 +1019,15 @@
     });
     
     // Full page slider active js
-	$('#fullpage').fullpage({
-		lockAnchors: false,
-		navigation: true,
-		verticalCentered: false,
-		responsiveWidth: 991,
-		paddingTop: '0px',
-		paddingBottom: '0px',
-		autoScrolling: false,
-	});
+    $('#fullpage').fullpage({
+        lockAnchors: false,
+        navigation: true,
+        verticalCentered: false,
+        responsiveWidth: 991,
+        paddingTop: '0px',
+        paddingBottom: '0px',
+        autoScrolling: false,
+    });
     
     /*------ Wow Active ----*/
     new WOW().init();
@@ -1060,7 +1128,7 @@
                 breakpoint: 420,
                 settings: {
                     autoplay: true,
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                 }
             }
         ]

@@ -31,7 +31,7 @@
           <div class="logo navbar-brand py-3 mr-0">
             <div class="logo-width">
               <router-link to="/">
-                <img src="/assets/images/logo/chhapai_logo.png" alt="logo" />
+                <img src="/assets/images/logo/logo.png" alt="Chhapai logo" />
               </router-link>
             </div>
           </div>
@@ -256,9 +256,6 @@
                       <ul>
                         <li>
                           <router-link to="/quote" @click.native="scrollToTop()">Get a Quote</router-link>
-                        </li>
-                        <li>
-                          <router-link to="/filesetup" @click.native="scrollToTop()">File Setup</router-link>
                         </li>
                         <li>
                           <router-link to="/about" @click.native="scrollToTop()">About</router-link>

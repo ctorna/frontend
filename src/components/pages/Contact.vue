@@ -1,6 +1,6 @@
 <template>
   <section>
-            <div class="breadcrumb-area breadcrumb-bg section-padding-1">
+        <div class="breadcrumb-area breadcrumb-bg section-padding-1">
             <div class="container">
                 <div class="breadcrumb-content">
                     <div class="breadcrumb-title">
@@ -8,7 +8,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="index.html">Home </a>
+                            <router-link to="/">Home</router-link>
                         </li>
                         <li><span> > </span></li>
                         <li class="active"> Contact Us </li>
@@ -24,22 +24,22 @@
                             <h2>Get a quote</h2>
                             <form id="contact-form" action="assets/mail-php/mail.php" method="post">
                                 <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="form-group col-12">
                                         <input name="name" type="text" placeholder="Your Name">
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="form-group col-12">
                                         <input name="email" type="email" placeholder="Your Email">
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="form-group col-12">
                                         <input name="phone" type="text" placeholder="Your Phone">
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="form-group col-12">
                                         <input name="subject" type="text" placeholder="Subject">
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-12">
-                                        <textarea name="message" placeholder="Your Message"></textarea>
+                                    <div class="form-group col-12">
+                                        <textarea rows="4" name="message" placeholder="Your Message"></textarea>
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="form-group col-12">
                                         <button class="submit" type="submit">Send</button>
                                     </div>
                                 </div>

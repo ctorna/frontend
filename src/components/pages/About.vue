@@ -1,6 +1,6 @@
 <template>
   <section>
-        <div class="breadcrumb-area breadcrumb-bg-1 section-padding-1 breadcrumb-ptb-4">
+        <div class="breadcrumb-area breadcrumb-bg section-padding-1">
             <div class="container">
                 <div class="breadcrumb-content">
                     <div class="breadcrumb-title">
@@ -8,7 +8,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="index.html">Home </a>
+                            <router-link to="/">Home</router-link>
                         </li>
                         <li><span> > </span></li>
                         <li class="active"> About Us </li>

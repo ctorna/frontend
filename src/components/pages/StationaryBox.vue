@@ -5,12 +5,10 @@
                 <div class="breadcrumb-content breadcrumb-font-inc">
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <router-link to="/">Home</router-link>
                         </li>
                         <li><span> > </span></li>
-                        <li>
-                            <a href="index.html">Good Things</a>
-                        </li>
+                        <li>Good Things</li>
                         <li><span> > </span></li>
                         <li class="active">Notebooks - wooden</li>
                     </ul>

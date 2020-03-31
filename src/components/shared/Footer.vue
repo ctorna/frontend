@@ -4,8 +4,8 @@
       <div class="container">
         <div class="subscribe-content-form-wrap gutters-1">
           <div class="subscribe-content col-lg-4">
-            <h2>Sign up</h2>
-            <p>for our special offers, news and inspiration</p>
+            <h2>Get Business</h2>
+            <p>cards online at your doorstep</p>
           </div>
           <div id="mc_embed_signup" class="subscribe-form col-lg-8">
             <form
@@ -135,7 +135,7 @@
                         <router-link to="/refund">Refund Policy</router-link>
                       </li>
                       <li>
-                        <router-link to="/refund">Client’s Happiness Policy</router-link>
+                        <router-link to="/clients-happiness-policy">Client’s Happiness Policy</router-link>
                       </li>
                       <li>
                         <router-link to="/privacy">Privacy Policy</router-link>
