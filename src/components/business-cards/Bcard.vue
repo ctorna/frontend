@@ -285,49 +285,20 @@
                 <a class="active" data-toggle="tab" href="#des-details1">Description</a>
                 <a data-toggle="tab" href="#des-details2">Additional information</a>
                 <a data-toggle="tab" href="#des-details3">Reviews (1)</a>
-                <a data-toggle="tab" href="#des-details4">Brands</a>
-                <a data-toggle="tab" href="#des-details5">Shipping & Delivery</a>
+                <a data-toggle="tab" href="#des-details4">How To Order</a>
+                <a data-toggle="tab" href="#des-details5">FAQ</a>
               </div>
               <div class="tab-content description-review-bottom">
                 <div id="des-details1" class="tab-pane active">
                   <div class="product-description-wrapper">
-                    <div class="row">
-                      <div class="product-dec-col-38">
-                        <div class="pro-details-banner">
-                          <a
-                            class="video-popup"
-                            href="https://player.vimeo.com/video/181061053?autoplay=1&amp;byline=0&amp;collections=0"
-                          >
-                            <img src="/assets/images/product-details/pro-details-banner.jpg" alt />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="product-dec-col-62">
-                        <div class="product-dec-content">
-                          <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu..</p>
-                          <ul>
-                            <li>Maecenas eu ante a elit tempus fermentum. Aliquam commodo tincidunt semper</li>
-                            <li>Aliquam est et tempus. Eaecenas libero ante, tincidunt vel</li>
-                          </ul>
-                          <p>Nunc lacus elit, faucibus ac laoreet sed, dapibus ac mi. Maecenas eu ante a elit tempus fermentum. Aliquam commodo tincidunt semper. Phasellus accumsan, justo ac mollis pharetra,.</p>
-                        </div>
-                      </div>
+                    <div class="row" v-html="getProductDetail.description">
+                    
                     </div>
                   </div>
                 </div>
                 <div id="des-details2" class="tab-pane">
-                  <div class="additional-info">
-                    <ul>
-                      <li>
-                        <span>Size</span>L, S, XL, XXL
-                      </li>
-                      <li>
-                        <span>Brands</span>Airi, Draven, Mango, Valentino, Zara
-                      </li>
-                      <li>
-                        <span>Color</span> Blue, Brown, Green, Pink, Violet, White
-                      </li>
-                    </ul>
+                  <div class="additional-info" v-html="getProductDetail.additionalInfo">
+                    
                   </div>
                 </div>
                 <div id="des-details3" class="tab-pane">
@@ -482,10 +453,8 @@
                   </div>
                 </div>
                 <div id="des-details5" class="tab-pane">
-                  <div class="about-shiping-content">
-                    <p>Nunc lacus elit, faucibus ac laoreet sed, dapibus ac mi. Maecenas eu ante a elit tempus fermentum. Aliquam commodo tincidunt semper. Phasellus accumsan, justo ac mollis pharetra, ex dui pharetra nisl, a scelerisque ipsum nulla ac sem. Cras eu risus urna. Duis lorem sapien, congue eget nisl sit amet, rutrum faucibus elit.</p>
-                    <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at, hendrerit arcu.</p>
-                    <p>Nunc lacus elit, faucibus ac laoreet sed, dapibus ac mi. Maecenas eu ante a elit tempus fermentum. Aliquam commodo tincidunt semper. Phasellus accumsan, justo ac mollis pharetra, ex dui pharetra nisl, a scelerisque ipsum nulla ac sem. Cras eu risus urna. Duis lorem sapien, congue eget nisl sit amet, rutrum faucibus elit.</p>
+                  <div class="about-shiping-content" v-html="getProductDetail.faq">
+                    
                   </div>
                 </div>
               </div>
@@ -840,6 +809,7 @@ export default {
   computed: {
     ...mapGetters({
       getMyProductJson: types.BCARDS_MYPRODUCTJSON,
+      getProductDetail: types.BCARDS_CARD_DETAIL
       
     })
   },

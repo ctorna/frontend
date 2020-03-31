@@ -21,6 +21,7 @@ export const BCARDS_MYPRICE = 'bcards/BCARDS_MYPRICE';
 export const BCARDS_MYPPC = 'bcards/BCARDS_MYPPC';
 export const BCARDS_TPRICE = 'bcards/BCARDS_TPRICE';
 export const BCARDS_MYPRODUCT = 'bcards/BCARDS_MYPRODUCT';
+export const BCARDS_CARD_DETAIL = 'bcards/BCARDS_CARD_DETAIL';
 
 
 /*Mutations*/

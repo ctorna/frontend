@@ -1,9 +1,12 @@
 import * as types from '../../types';
 import businessCardsJson from './category-1.json';
+import bcardDetails from './products-detail.json';
 import { bcardConstants } from '../../../components/business-cards/mapArray';
 const state = {
     businessCardsJson,
     bcardConstants,
+    bcardDetails,
+    cardDetail: {},
     productJson: {},
     paperTreatments: [],
     printingSides: {},
@@ -64,6 +67,10 @@ const getters = {
     [types.BCARDS_MYPRODUCT]: state => {
 
         return state.myProduct;
+    },
+    [types.BCARDS_CARD_DETAIL]: state => {
+
+        return state.cardDetail;
     }
 
 
@@ -191,6 +198,7 @@ const mutations = {
         state.myProduct.wp_id = payload.wp_id;
         state.myProduct.id = payload.id;
         state.myProduct.label = payload.label;
+        state.cardDetail = bcardDetails[payload.wp_id]
 
     },
     /*used to make state changes reflective*/
