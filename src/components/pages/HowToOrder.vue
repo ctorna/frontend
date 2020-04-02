@@ -7,11 +7,8 @@
                         <h2>How to Order</h2>
                     </div>
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
-                        <li class="active"> how to order </li>
+                        <li><router-link to="/">Home</router-link></li>
+                        <li class="active"> How to order </li>
                     </ul>
                 </div>
             </div>

@@ -4,13 +4,9 @@
             <div class="container-fluid">
                 <div class="breadcrumb-content breadcrumb-font-inc">
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
+                        <li><router-link to="/">Home</router-link></li>
                         <li>Good Things</li>
-                        <li><span> > </span></li>
-                        <li class="active">Notebooks - wooden</li>
+                        <li class="active">Accessories</li>
                     </ul>
                 </div>
             </div>
@@ -22,105 +18,105 @@
                         <div class="product-images-wrap d-none d-lg-block">
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM.jpeg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM.jpeg" alt="">
+                                    <a href="product-images/accessories/1.jpg">
+                                        <img src="product-images/accessories/1.jpg" alt="">
                                     </a>
                                 </div>
                                 <span class="product-sale">Sale!</span>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/accessories/1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-2.jpeg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-2.jpeg" alt="">
+                                    <a href="product-images/accessories/2.jpg">
+                                        <img src="product-images/accessories/2.jpg" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-2.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/accessories/2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-3-600x400.jpeg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-3-600x400.jpeg" alt="">
+                                    <a href="product-images/accessories/3.jpg">
+                                        <img src="product-images/accessories/3.jpg" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-3-600x400.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/accessories/3.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-5-600x400.jpeg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-5-600x400.jpeg" alt="">
+                                    <a href="product-images/accessories/4.jpg">
+                                        <img src="product-images/accessories/4.jpg" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-5-600x400.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/accessories/4.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-4.jpeg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-4.jpeg" alt="">
+                                    <a href="product-images/accessories/5.jpg">
+                                        <img src="product-images/accessories/5.jpg" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-4.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/accessories/5.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                         </div>
                         <div class="product-details-tab d-lg-none">
                             <div class="pro-dec-big-img-slider">
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM.jpeg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM.jpeg" alt="">
+                                        <a href="product-images/accessories/1.jpg">
+                                            <img src="product-images/accessories/1.jpg" alt="">
                                         </a>
                                     </div>
                                     <span class="product-sale">Sale!</span>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/accessories/1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-2.jpeg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-2.jpeg" alt="">
+                                        <a href="product-images/accessories/2.jpg">
+                                            <img src="product-images/accessories/2.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-2.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/accessories/2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-3-600x400.jpeg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-3-600x400.jpeg" alt="">
+                                        <a href="product-images/accessories/3.jpg">
+                                            <img src="product-images/accessories/3.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-3-600x400.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/accessories/3.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-5-600x400.jpeg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-5-600x400.jpeg" alt="">
+                                        <a href="product-images/accessories/4.jpg">
+                                            <img src="product-images/accessories/4.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-5-600x400.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/accessories/4.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-4.jpeg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-4.jpeg" alt="">
+                                        <a href="product-images/accessories/5.jpg">
+                                            <img src="product-images/accessories/5.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-4.jpeg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/accessories/5.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                             </div>
                             <div class="product-dec-slider-2 product-dec-small-style2">
                                 <div class="product-dec-small active">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM.jpeg" alt="">
+                                    <img src="product-images/accessories/1.jpg" alt="">
                                 </div>
                                 <div class="product-dec-small">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-2.jpeg" alt="">
+                                    <img src="product-images/accessories/2.jpg" alt="">
                                 </div>
                                 <div class="product-dec-small">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-3-600x400.jpeg" alt="">
+                                    <img src="product-images/accessories/3.jpg" alt="">
                                 </div>
                                 <div class="product-dec-small">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-5-600x400.jpeg" alt="">
+                                    <img src="product-images/accessories/4.jpg" alt="">
                                 </div>
                                 <div class="product-dec-small">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/04/WhatsApp-Image-2019-04-01-at-2.29.34-AM-4.jpeg" alt="">
+                                    <img src="product-images/accessories/5.jpg" alt="">
                                 </div>
                             </div>
                         </div>

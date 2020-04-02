@@ -107,6 +107,17 @@
     background-position: center;
     padding: 40px 0;
 }
+.breadcrumb-content ul li:after {
+    content: '>';
+    display: inline-block;
+    margin: 0 0 0 6px;
+    line-height: 1;
+    position: relative;
+    top: 1px;
+}
+.breadcrumb-content ul li.active:after {
+    display: none;
+}
 .price_calc .card {
     overflow: hidden;
     border-radius: 0;
@@ -337,10 +348,24 @@
     padding: 0;
     border-top: none; 
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.summary .table td table {
+    width: 100%;
+    background-color: rgba(94, 179, 102, 0.2);
+    border-radius: 5px;
+    padding: 10px;
     display: block;
+    margin-top: 5px;
+}
+.summary .table td table tr:first-child {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 .summary .action .btn {
-    border-radius: 0;1
+    border-radius: 0;
     width: 100%;
 }
 .summary .action .btn-primary {
@@ -820,8 +845,11 @@
 .blog-details-content .blog-details-paragraph h2,
 .blog-details-content .blog-details-paragraph h3 {
     font-weight: 600;
-    margin-top: 10px;
     margin-bottom: 15px;
+    line-height: 1.6;
+}
+.blog-details-content .blog-details-paragraph h2 {
+    margin-top: 10px;
 }
 .blog-details-content .blog-details-paragraph p {
     margin-bottom: 10px;

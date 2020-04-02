@@ -2,7 +2,7 @@
   <div class="row gutters-1 price quantity">
     <div class="col-12 mb-2">
       <h4 class="mb-3">Choose your quantity</h4>
-      <div class="price-item text-white" style="background-color: #fc4f4f; padding: 15px;">
+      <div class="price-item text-white" style="background-color: #5eb366; padding: 15px;">
         <div class="content">
           <div class="d-flex justify-content-between font-weight-bold">
             Quantity

@@ -4,13 +4,9 @@
             <div class="container-fluid">
                 <div class="breadcrumb-content breadcrumb-font-inc">
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
+                        <li><router-link to="/">Home</router-link></li>
                         <li>Good Things</li>
-                        <li><span> > </span></li>
-                        <li class="active">Notebooks - wooden</li>
+                        <li class="active">Business Card Holders</li>
                     </ul>
                 </div>
             </div>
@@ -22,12 +18,12 @@
                         <div class="product-images-wrap">
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/04/DSC08624.jpg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/04/DSC08624.jpg" alt="">
+                                    <a href="product-images/card-holder/1.jpg">
+                                        <img src="product-images/card-holder/1.jpg" alt="">
                                     </a>
                                 </div>
                                 <span class="product-sale">Sale!</span>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/DSC08624.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/card-holder/1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                         </div>
                     </div>

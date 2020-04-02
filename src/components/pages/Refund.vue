@@ -7,10 +7,7 @@
                         <h2>Refunds Policy</h2>
                     </div>
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
+                        <li><router-link to="/">Home</router-link></li>
                         <li class="active"> Refunds Policy </li>
                     </ul>
                 </div>

@@ -7,10 +7,7 @@
                         <h2>Refer & Earn</h2>
                     </div>
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
+                        <li><router-link to="/">Home</router-link></li>
                         <li class="active"> Refer & Earn </li>
                     </ul>
                 </div>

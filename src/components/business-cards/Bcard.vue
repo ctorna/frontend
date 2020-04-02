@@ -7,25 +7,9 @@
       <div class="container-fluid">
         <div class="breadcrumb-content breadcrumb-font-inc">
           <ul>
-            <li>
-              <a href="index.html">Home 01</a>
-            </li>
-            <li>
-              <span>></span>
-            </li>
-            <li>
-              <a href="index.html">Shop</a>
-            </li>
-            <li>
-              <span>></span>
-            </li>
-            <li>
-              <a href="index.html">Fashion sale off</a>
-            </li>
-            <li>
-              <span>></span>
-            </li>
-            <li class="active">Sleeve Button Cowl Neck</li>
+            <li><router-link to="/">Home</router-link></li>
+            <li>Business Cards</li>
+            <li class="active">{{getMyProductJson.name}}</li>
           </ul>
         </div>
       </div>
@@ -37,131 +21,36 @@
             <div class="product-images-wrap d-none d-lg-block">
               <div class="easyzoom-style mb-10" v-for="index in 6" :key="index">
                 <div class="easyzoom easyzoom--overlay">
-                  <a
-                    :href="getImageUrl(index)"
-                  >
-                    <img
-                      :src="getImageUrl(index)"
-                      
-                    />
+                  <a :href="getImageUrl(index)">
+                    <img :src="getImageUrl(index)" alt="">
                   </a>
                 </div>
                 <span class="product-sale">Sale!</span>
-                <a
-                  class="easyzoom-pop-up img-popup"
-                  :href="getImageUrl(index)"
-                >
+                <a class="easyzoom-pop-up img-popup" :href="getImageUrl(index)">
                   <i class="dlicon ui-1_zoom-in"></i>
                 </a>
               </div>
-
             </div>
 
             <!-- For Mobile -->
 
             <div class="product-details-tab d-lg-none">
-              <div class="pro-dec-big-img-slider">
-                <div class="easyzoom-style">
+              <div class="pro-dec-big-img-slider" ref="class_pro_dec_big_img_slider">
+                <div class="easyzoom-style" v-for="index in 6" :key="index">
                   <div class="easyzoom easyzoom--overlay">
-                    <a
-                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    >
-                      <img
-                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                        alt
-                      />
+                    <a :href="getImageUrl(index)">
+                      <img :src="getImageUrl(index)">
                     </a>
                   </div>
                   <span class="product-sale">Sale!</span>
-                  <a
-                    class="easyzoom-pop-up img-popup"
-                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                  >
-                    <i class="dlicon ui-1_zoom-in"></i>
-                  </a>
-                </div>
-                <div class="easyzoom-style">
-                  <div class="easyzoom easyzoom--overlay">
-                    <a
-                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    >
-                      <img
-                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                        alt
-                      />
-                    </a>
-                  </div>
-                  <span class="product-sale">Sale!</span>
-                  <a
-                    class="easyzoom-pop-up img-popup"
-                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                  >
-                    <i class="dlicon ui-1_zoom-in"></i>
-                  </a>
-                </div>
-                <div class="easyzoom-style">
-                  <div class="easyzoom easyzoom--overlay">
-                    <a
-                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    >
-                      <img
-                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                        alt
-                      />
-                    </a>
-                  </div>
-                  <span class="product-sale">Sale!</span>
-                  <a
-                    class="easyzoom-pop-up img-popup"
-                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                  >
-                    <i class="dlicon ui-1_zoom-in"></i>
-                  </a>
-                </div>
-                <div class="easyzoom-style">
-                  <div class="easyzoom easyzoom--overlay">
-                    <a
-                      href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    >
-                      <img
-                        src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                        alt
-                      />
-                    </a>
-                  </div>
-                  <span class="product-sale">Sale!</span>
-                  <a
-                    class="easyzoom-pop-up img-popup"
-                    href="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                  >
+                  <a class="easyzoom-pop-up img-popup" :href="getImageUrl(index)" ref="class_img_popup">
                     <i class="dlicon ui-1_zoom-in"></i>
                   </a>
                 </div>
               </div>
-              <div class="product-dec-slider-2 product-dec-small-style2">
-                <div class="product-dec-small active">
-                  <img
-                    src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    alt
-                  />
-                </div>
-                <div class="product-dec-small">
-                  <img
-                    src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    alt
-                  />
-                </div>
-                <div class="product-dec-small">
-                  <img
-                    src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    alt
-                  />
-                </div>
-                <div class="product-dec-small">
-                  <img
-                    src="https://chhapai.com/wp-content/uploads/elementor/thumbs/Letterpress_Business_Cards_MockUp_1-o8rmr10td8e46fopts8kk2aand8nf603awrqlnxb3y.jpg"
-                    alt
-                  />
+              <div class="product-dec-slider-2 product-dec-small-style2" ref="class_product_dec_slider_2">
+                <div class="product-dec-small active" v-for="index in 6" :key="index">
+                  <img :src="getImageUrl(index)">
                 </div>
               </div>
             </div>
@@ -170,10 +59,6 @@
             <div class="row gutters-1">
               <div class="col-12 col-sm-8">
                 <div class="product-details-content p-dec-content-edit">
-                  <!-- <div class="pro-dec-next-prev">
-                                        <a class="prev" href="#"><i class="dlicon arrows-1_tail-left"></i></a>
-                                        <a class="next" href="#"><i class="dlicon arrows-1_tail-right"></i></a>
-                  </div>-->
                   <h2 class="uppercase">{{getMyProductJson.name}}</h2>
                   <p
                     class="mb-0 mt-2"
@@ -192,8 +77,10 @@
                     <div class="price-block">
                       <h2 class="title mb-1">Choose paper & quantity</h2>
                       <bcard-paper></bcard-paper>
-                      <bcard-size></bcard-size>
-                      <bcard-printing></bcard-printing>
+                      <div class="row gutters-1 price custom-radio custom-radio-block">
+                          <bcard-size></bcard-size>
+                          <bcard-printing></bcard-printing>
+                      </div>
                       <bcard-quantity></bcard-quantity>
                     </div>
                     <div class="price-block">
@@ -243,13 +130,10 @@
                     <i class="dlicon emoticons_smile"></i> 100% Happiness Guarantee
                     <span class="quote">
                       If You are not happy with your order contact us and we'll make it right...
-                      <a
-                        href="https://www.chhapai.com/clients-happiness-policy/"
-                        target="_blank"
-                      >more</a>
+                      <router-link to="/clients-happiness-policy">more</router-link>
                     </span>
                   </p>
-                  <div class="social-icon-style-3">
+                  <div class="social-icon-style-3 d-none">
                     <a class="facebook" href="#">
                       <i class="fa fa-facebook"></i>
                     </a>
@@ -276,7 +160,7 @@
         </div>
       </div>
     </div>
-    <div class="description-review-area section-padding-7 pb-100">
+    <div class="description-review-area section-padding-7 pb-50">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 col-md-12">
@@ -291,7 +175,7 @@
               <div class="tab-content description-review-bottom">
                 <div id="des-details1" class="tab-pane active">
                   <div class="product-description-wrapper">
-                    <div class="row" v-html="getProductDetail.description">
+                    <div v-html="getProductDetail.description">
                     
                     </div>
                   </div>
@@ -454,297 +338,8 @@
                 </div>
                 <div id="des-details5" class="tab-pane">
                   <div class="about-shiping-content" v-html="getProductDetail.faq">
-                    
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="small-device-area d-block d-md-none">
-      <div class="container-fluid">
-        <div class="pro-dec-small-device">
-          <div class="pro-details-sidebar-active slider-nav-style-3 owl-carousel">
-            <div class="single-pro-details-sidebar">
-              <a href="#">
-                <img src="/assets/images/product-details/pro-details-sidebar-1.jpg" alt />
-              </a>
-              <div class="pro-details-sidebar-content">
-                <h4>
-                  <a href="#">
-                    NEW
-                    <br />LONDON
-                  </a>
-                </h4>
-                <p>Off 20% for all</p>
-              </div>
-            </div>
-            <div class="single-pro-details-sidebar">
-              <a href="#">
-                <img src="/assets/images/product-details/pro-details-sidebar-2.jpg" alt />
-              </a>
-              <div class="pro-details-sidebar-content">
-                <h4>
-                  <a href="#">
-                    NEW
-                    <br />LONDON
-                  </a>
-                </h4>
-                <p>Off 20% for all</p>
-              </div>
-            </div>
-          </div>
-          <div class="sidebar-subscribe-wrap">
-            <div class="sidebar-subscribe-content text-center">
-              <i class="dlicon ui-1_email-84"></i>
-              <h5>Join Our Newsletter</h5>
-              <p>Sale up to 20% off for your next purchase in this month!</p>
-            </div>
-            <div class="sidebar-subscribe-form">
-              <form
-                class="validate subscribe-form-style"
-                novalidate
-                target="_blank"
-                name="mc-embedded-subscribe-form"
-                method="post"
-                action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
-              >
-                <div class="mc-form">
-                  <input
-                    class="email"
-                    type="email"
-                    required
-                    placeholder=" email address…"
-                    name="EMAIL"
-                    value
-                  />
-                  <div class="mc-news" aria-hidden="true">
-                    <input
-                      type="text"
-                      value
-                      tabindex="-1"
-                      name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef"
-                    />
-                  </div>
-                  <div class="clear">
-                    <input class="button" type="submit" name="subscribe" value="Subscribe" />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="related-product-area section-padding-1 pb-95">
-      <div class="container-fluid">
-        <div class="section-title-6 mb-50">
-          <h2>Related Products</h2>
-        </div>
-        <div class="related-product-active owl-carousel">
-          <div class="product-wrap">
-            <div class="product-img default-overlay mb-25">
-              <a href="product-details.html">
-                <img class="default-img" src="/assets/images/product/product-3.jpg" alt />
-                <img class="hover-img" src="/assets/images/product/product-3-2.jpg" alt />
-              </a>
-              <div class="product-action product-action-position-1">
-                <a data-toggle="modal" data-target="#exampleModal" href="#">
-                  <i class="fa fa-eye"></i>
-                  <span>Quick Shop</span>
-                </a>
-                <a title="Add to Wishlist" href="#">
-                  <i class="fa fa-heart"></i>
-                  <span>Add to Wishlist</span>
-                </a>
-                <a class="icon-blod" title="Add to Compare" href="#">
-                  <i class="dlicon arrows-4_compare"></i>
-                  <span>Add to Compare</span>
-                </a>
-                <a title="Add to Cart" href="#">
-                  <i class="fa fa-shopping-cart"></i>
-                  <span>Add to Cart</span>
-                </a>
-              </div>
-            </div>
-            <div class="product-content-2 title-font-width-400 text-center">
-              <h3>
-                <a href="product-details.html">Fashion sneaker winter</a>
-              </h3>
-              <div class="product-price">
-                <span class="new-price">$28.00</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-wrap">
-            <div class="product-img default-overlay mb-25">
-              <a href="product-details.html">
-                <img class="default-img" src="/assets/images/product/product-4.jpg" alt />
-                <img class="hover-img" src="/assets/images/product/product-4-2.jpg" alt />
-              </a>
-              <div class="product-action product-action-position-1">
-                <a data-toggle="modal" data-target="#exampleModal" href="#">
-                  <i class="fa fa-eye"></i>
-                  <span>Quick Shop</span>
-                </a>
-                <a title="Add to Wishlist" href="#">
-                  <i class="fa fa-heart"></i>
-                  <span>Add to Wishlist</span>
-                </a>
-                <a class="icon-blod" title="Add to Compare" href="#">
-                  <i class="dlicon arrows-4_compare"></i>
-                  <span>Add to Compare</span>
-                </a>
-                <a title="Add to Cart" href="#">
-                  <i class="fa fa-shopping-cart"></i>
-                  <span>Add to Cart</span>
-                </a>
-              </div>
-            </div>
-            <div class="product-content-2 title-font-width-400 text-center">
-              <h3>
-                <a href="product-details.html">News strappy sandals</a>
-              </h3>
-              <div class="product-price">
-                <span class="new-price">$26.00</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-wrap">
-            <div class="product-img default-overlay mb-25">
-              <a href="product-details.html">
-                <img class="default-img" src="/assets/images/product/product-1.jpg" alt />
-                <img class="hover-img" src="/assets/images/product/product-1-2.jpg" alt />
-              </a>
-              <div class="product-action product-action-position-1">
-                <a data-toggle="modal" data-target="#exampleModal" href="#">
-                  <i class="fa fa-eye"></i>
-                  <span>Quick Shop</span>
-                </a>
-                <a title="Add to Wishlist" href="#">
-                  <i class="fa fa-heart"></i>
-                  <span>Add to Wishlist</span>
-                </a>
-                <a class="icon-blod" title="Add to Compare" href="#">
-                  <i class="dlicon arrows-4_compare"></i>
-                  <span>Add to Compare</span>
-                </a>
-                <a title="Add to Cart" href="#">
-                  <i class="fa fa-shopping-cart"></i>
-                  <span>Add to Cart</span>
-                </a>
-              </div>
-            </div>
-            <div class="product-content-2 title-font-width-400 text-center">
-              <h3>
-                <a href="product-details.html">Check bermuda shorts</a>
-              </h3>
-              <div class="product-price">
-                <span class="new-price">$39.00</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-wrap">
-            <div class="product-img default-overlay mb-25">
-              <a href="product-details.html">
-                <img class="default-img" src="/assets/images/product/product-5.jpg" alt />
-                <img class="hover-img" src="/assets/images/product/product-5-2.jpg" alt />
-              </a>
-              <div class="product-action product-action-position-1">
-                <a data-toggle="modal" data-target="#exampleModal" href="#">
-                  <i class="fa fa-eye"></i>
-                  <span>Quick Shop</span>
-                </a>
-                <a title="Add to Wishlist" href="#">
-                  <i class="fa fa-heart"></i>
-                  <span>Add to Wishlist</span>
-                </a>
-                <a class="icon-blod" title="Add to Compare" href="#">
-                  <i class="dlicon arrows-4_compare"></i>
-                  <span>Add to Compare</span>
-                </a>
-                <a title="Add to Cart" href="#">
-                  <i class="fa fa-shopping-cart"></i>
-                  <span>Add to Cart</span>
-                </a>
-              </div>
-            </div>
-            <div class="product-content-2 title-font-width-400 text-center">
-              <h3>
-                <a href="product-details.html">Down puffer coat collar</a>
-              </h3>
-              <div class="product-price">
-                <span class="new-price">$55.00</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-wrap">
-            <div class="product-img default-overlay mb-25">
-              <a href="product-details.html">
-                <img class="default-img" src="/assets/images/product/product-6.jpg" alt />
-                <img class="hover-img" src="/assets/images/product/product-6-2.jpg" alt />
-              </a>
-              <div class="product-action product-action-position-1">
-                <a data-toggle="modal" data-target="#exampleModal" href="#">
-                  <i class="fa fa-eye"></i>
-                  <span>Quick Shop</span>
-                </a>
-                <a title="Add to Wishlist" href="#">
-                  <i class="fa fa-heart"></i>
-                  <span>Add to Wishlist</span>
-                </a>
-                <a class="icon-blod" title="Add to Compare" href="#">
-                  <i class="dlicon arrows-4_compare"></i>
-                  <span>Add to Compare</span>
-                </a>
-                <a title="Add to Cart" href="#">
-                  <i class="fa fa-shopping-cart"></i>
-                  <span>Add to Cart</span>
-                </a>
-              </div>
-            </div>
-            <div class="product-content-2 title-font-width-400 text-center">
-              <h3>
-                <a href="product-details.html">Bejewelled velvet sandals</a>
-              </h3>
-              <div class="product-price">
-                <span class="new-price">$49.00</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-wrap">
-            <div class="product-img default-overlay mb-25">
-              <a href="product-details.html">
-                <img class="default-img" src="/assets/images/product/product-4.jpg" alt />
-                <img class="hover-img" src="/assets/images/product/product-4-2.jpg" alt />
-              </a>
-              <div class="product-action product-action-position-1">
-                <a data-toggle="modal" data-target="#exampleModal" href="#">
-                  <i class="fa fa-eye"></i>
-                  <span>Quick Shop</span>
-                </a>
-                <a title="Add to Wishlist" href="#">
-                  <i class="fa fa-heart"></i>
-                  <span>Add to Wishlist</span>
-                </a>
-                <a class="icon-blod" title="Add to Compare" href="#">
-                  <i class="dlicon arrows-4_compare"></i>
-                  <span>Add to Compare</span>
-                </a>
-                <a title="Add to Cart" href="#">
-                  <i class="fa fa-shopping-cart"></i>
-                  <span>Add to Cart</span>
-                </a>
-              </div>
-            </div>
-            <div class="product-content-2 title-font-width-400 text-center">
-              <h3>
-                <a href="product-details.html">News strappy sandals</a>
-              </h3>
-              <div class="product-price">
-                <span class="new-price">$26.00</span>
               </div>
             </div>
           </div>
@@ -818,11 +413,46 @@ export default {
       this.setProductJson(this.$route.params.id);
     }
   },
-  mounted: function() {
-    console.log("route id is " + this.$route.params.id);
-    //this.setProductJson(this.$route.params.id);
-    //console.log(this.$store.state.product.productJson);
-    //eventBus.$emit('transparentHeaderClass',false);
-  }
+    mounted: function() {
+        console.log("route id is " + this.$route.params.id);
+        //this.setProductJson(this.$route.params.id);
+        //console.log(this.$store.state.product.productJson);
+        //eventBus.$emit('transparentHeaderClass',false);
+
+        console.log(this.$refs);
+        jQuery('.pro-dec-big-img-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            draggable: false,
+            fade: false,
+            asNavFor: '.product-dec-slider , .product-dec-slider-2',
+        });
+
+        jQuery('.product-dec-slider-2').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.pro-dec-big-img-slider',
+            dots: false,
+            focusOnSelect: true,
+            fade: false,
+            prevArrow: '<span class="pro-dec-icon pro-dec-prev"><i class="dlicon arrows-1_tail-left"></i></span>',
+            nextArrow: '<span class="pro-dec-icon pro-dec-next"><i class="dlicon arrows-1_tail-right"></i></span>',
+            responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                        
+                    }
+                },
+                {
+                    breakpoint: 420,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 3,
+                    }
+                }
+            ]
+        });
+    }
 };
 </script>

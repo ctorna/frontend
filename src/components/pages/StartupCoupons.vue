@@ -7,10 +7,7 @@
                         <h2>Startup Coupons</h2>
                     </div>
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
+                        <li><router-link to="/">Home</router-link></li>
                         <li class="active"> Startup Coupons </li>
                     </ul>
                 </div>

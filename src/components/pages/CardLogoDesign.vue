@@ -4,15 +4,9 @@
             <div class="container-fluid">
                 <div class="breadcrumb-content breadcrumb-font-inc">
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
-                        <li>
-                            <a href="index.html">Good Things</a>
-                        </li>
-                        <li><span> > </span></li>
-                        <li class="active">Notebooks - wooden</li>
+                        <li><router-link to="/">Home</router-link></li>
+                        <li>Design</li>
+                        <li class="active">Business Cards + Logo Design</li>
                     </ul>
                 </div>
             </div>
@@ -24,12 +18,12 @@
                         <div class="product-images-wrap">
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/04/Tara-Farms.png">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/04/Tara-Farms.png" alt="">
+                                    <a href="product-images/business-card-logo-design/1.png">
+                                        <img src="product-images/business-card-logo-design/1.png" alt="">
                                     </a>
                                 </div>
                                 <span class="product-sale">Sale!</span>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/04/Tara-Farms.png"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/business-card-logo-design/1.png"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                         </div>
                     </div>

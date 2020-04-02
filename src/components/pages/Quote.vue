@@ -7,12 +7,7 @@
             <h2>Get a Quote</h2>
           </div>
           <ul>
-            <li>
-              <router-link to="/">Home</router-link>
-            </li>
-            <li>
-              <span>></span>
-            </li>
+            <li><router-link to="/">Home</router-link></li>
             <li class="active">Get a Quote</li>
           </ul>
         </div>

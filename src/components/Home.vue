@@ -30,7 +30,7 @@
                                     <h1 class="animated">Want your brand <br class="d-none d-md-block">to speak cosmopolitan?</h1>
                                     <span class="animated">Sculpted to be chic, elegant & unlike any other.</span>
                                     <div class="slider-btn-1">
-                                        <a class="animated" href="product.html">Shop Now</a>
+                                        <router-link class="animated" to="/bcard/1">Shop Now</router-link>
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                                     <h1 class="animated">Need a dazzling card <br class="d-none d-md-block">to cabinet your persona?</h1>
                                     <span class="animated">Taking artistry to another level with awe-inspiring & startling designs.</span>
                                     <div class="slider-btn-1">
-                                        <a class="animated" href="product.html">Shop Now</a>
+                                        <router-link class="animated" to="/bcard/3">Shop Now</router-link>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@
                                     <h1 class="animated">You think the design <br class="d-none d-md-block">& we make it!</h1>
                                     <span class="animated">A sophisticated finish with dramatic cuts and intensely designed business cards.</span>
                                     <div class="slider-btn-1">
-                                        <a class="animated" href="product.html">Shop Now</a>
+                                        <router-link class="animated" to="/bcard/14">Shop Now</router-link>
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                                     <h1 class="animated">Providing you with a <br class="d-none d-md-block">better choice.</h1>
                                     <span class="animated">Get an environmental friendly visiting card and do your bit to save the planet.</span>
                                     <div class="slider-btn-1">
-                                        <a class="animated" href="product.html">Shop Now</a>
+                                        <router-link class="animated" to="/bcard/1">Shop Now</router-link>
                                     </div>
                                 </div>
                             </div>
@@ -571,7 +571,7 @@
                 <div class="container position-relative">
                     <div class="text-center">
                         <h2 class="text-white">Want your brand <br class="d-none d-md-block">to speak cosmopolitan?</h2>
-                        <a href="product.html" class="btn">Shop Now</a>
+                        <a href="/bcard/1" class="btn">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -655,7 +655,7 @@
                 <div class="testimonial-slider owl-carousel" ref="class_testimonial_slider">
                     <div class="testimonial-item">
                         <div class="testimonial-thumb">
-                            <img src="https://chhapai.com/wp-content/uploads/2019/05/3-1.jpeg" alt="Harkirat Singh">
+                            <img src="assets/images/testimonial/harkirat.jpg" alt="Harkirat Singh">
                         </div>
                         <div class="testimonial-content">
                             <p>I never worry about the quality of the product. Very professional operations. The design module provided is un-matched. The printing solutions provided by Chhapai are top class. Definitely a market leader in printing.</p>
@@ -664,7 +664,7 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-thumb">
-                            <img src="https://chhapai.com/wp-content/uploads/2019/05/1-1.jpeg" alt="Shagun Dogra">
+                            <img src="assets/images/testimonial/shagun.jpg" alt="Shagun Dogra">
                         </div>
                         <div class="testimonial-content">
                             <p>I’ve received my visiting cards and stationery printed by chhapai and it’s really amazing and and Vanika at the front end assisted me really well. Thank you chhapai for such a great experience.</p>
@@ -673,7 +673,7 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-thumb">
-                            <img src="https://chhapai.com/wp-content/uploads/2019/06/Nimish.jpg" alt="Nimish Vashisht">
+                            <img src="assets/images/testimonial/nimish.jpg" alt="Nimish Vashisht">
                         </div>
                         <div class="testimonial-content">
                             <p>Just received my business cards, Absolute amazing quality and very sincere service. If you are passionate about your business this is the place to be.</p>
@@ -682,7 +682,7 @@
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-thumb">
-                            <img src="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpeg" alt="Shamsheer Bali">
+                            <img src="assets/images/testimonial/shamsheer.jpg" alt="Shamsheer Bali">
                         </div>
                         <div class="testimonial-content">
                             <p>I really appreciate the service. It saved us time and money on our printing requirements. Chhapai gave excellent advice on paper quality & various treatments. It sure is a one stop shop for all your printing needs. Thank You Chhapai!</p>
@@ -704,7 +704,7 @@
                                 <span>Get Started Today!</span>
                                 <h2>Become a reseller</h2>
                                 <div class="btn-style-1 text-center">
-                                    <a href="reseller.html">
+                                    <a href="/reseller">
                                         <div class="btn-viewmore-normal btn-ptb-2 btn-viewmore-bg-black btn-viewmore-common btn-font-2">
                                             <span>SIGN UP TODAY</span>
                                         </div>
@@ -723,7 +723,7 @@
             <div class="row no-gutters">
                 <div class="col-md-6">
                     <div class="banner-wrap default-overlay banner-zoom">
-                        <a href="bespoke-business-cards.html">
+                        <a href="/bespoke-business-cards">
                             <div class="banner-img">
                                 <img src="assets/images/blog/blog-1/trending.jpg" alt="Bespoke business cards">
                             </div>
@@ -736,7 +736,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="banner-wrap default-overlay banner-zoom">
-                        <a href="blog-details.html">
+                        <a href="/why-influencers-should-have-business-cards">
                             <div class="banner-img">
                                 <img src="assets/images/slider/slider3.jpg" alt="blog">
                             </div>
@@ -754,8 +754,7 @@
 <script>
 export default {
     mounted:function(){
-        console.log(this.$refs);
-        jQuery(this.$refs.class_main_slider_active).owlCarousel({
+        jQuery('.main-slider-active').owlCarousel({
             loop: true,
             nav: false,
             autoplay: true,
@@ -780,7 +779,7 @@ export default {
             }
         });
 
-        jQuery(this.$refs.class_testimonial_slider).owlCarousel({
+        jQuery('.testimonial-slider').owlCarousel({
             loop: true,
             nav: false,
             autoplay: true,

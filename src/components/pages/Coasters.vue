@@ -4,13 +4,9 @@
             <div class="container-fluid">
                 <div class="breadcrumb-content breadcrumb-font-inc">
                     <ul>
-                        <li>
-                            <router-link to="/">Home</router-link>
-                        </li>
-                        <li><span> > </span></li>
+                        <li><router-link to="/">Home</router-link></li>
                         <li>Good Things</li>
-                        <li><span> > </span></li>
-                        <li class="active">Notebooks - wooden</li>
+                        <li class="active">Coasters</li>
                     </ul>
                 </div>
             </div>
@@ -22,86 +18,86 @@
                         <div class="product-images-wrap d-none d-lg-block">
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/05/2-2.jpg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/05/2-2.jpg" alt="">
+                                    <a href="product-images/coasters/1.jpg">
+                                        <img src="product-images/coasters/1.jpg" alt="">
                                     </a>
                                 </div>
                                 <span class="product-sale">Sale!</span>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/2-2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/coasters/1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpg" alt="">
+                                    <a href="product-images/coasters/2.jpg">
+                                        <img src="product-images/coasters/2.jpg" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/coasters/2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/05/3-2.jpg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/05/3-2.jpg" alt="">
+                                    <a href="product-images/coasters/3.jpg.jpg">
+                                        <img src="product-images/coasters/3.jpg.jpg" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/3-2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/coasters/3.jpg.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                             <div class="easyzoom-style mb-10">
                                 <div class="easyzoom easyzoom--overlay">
-                                    <a href="https://chhapai.com/wp-content/uploads/2019/05/1-7.jpg">
-                                        <img src="https://chhapai.com/wp-content/uploads/2019/05/1-7.jpg" alt="">
+                                    <a href="product-images/coasters/4.jpg">
+                                        <img src="product-images/coasters/4.jpg" alt="">
                                     </a>
                                 </div>
-                                <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/1-7.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                <a class="easyzoom-pop-up img-popup" href="product-images/coasters/4.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                             </div>
                         </div>
                         <div class="product-details-tab d-lg-none">
                             <div class="pro-dec-big-img-slider">
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/05/2-2.jpg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/05/2-2.jpg" alt="">
+                                        <a href="product-images/coasters/1.jpg">
+                                            <img src="product-images/coasters/1.jpg" alt="">
                                         </a>
                                     </div>
                                     <span class="product-sale">Sale!</span>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/2-2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/coasters/1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpg" alt="">
+                                        <a href="product-images/coasters/2.jpg">
+                                            <img src="product-images/coasters/2.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/coasters/2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/05/3-2.jpg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/05/3-2.jpg" alt="">
+                                        <a href="product-images/coasters/3.jpg.jpg">
+                                            <img src="product-images/coasters/3.jpg.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/3-2.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/coasters/3.jpg.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                                 <div class="easyzoom-style">
                                     <div class="easyzoom easyzoom--overlay">
-                                        <a href="https://chhapai.com/wp-content/uploads/2019/05/1-7.jpg">
-                                            <img src="https://chhapai.com/wp-content/uploads/2019/05/1-7.jpg" alt="">
+                                        <a href="product-images/coasters/4.jpg">
+                                            <img src="product-images/coasters/4.jpg" alt="">
                                         </a>
                                     </div>
-                                    <a class="easyzoom-pop-up img-popup" href="https://chhapai.com/wp-content/uploads/2019/05/1-7.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
+                                    <a class="easyzoom-pop-up img-popup" href="product-images/coasters/4.jpg"><i class="dlicon ui-1_zoom-in "></i></a>
                                 </div>
                             </div>
                             <div class="product-dec-slider-2 product-dec-small-style2">
                                 <div class="product-dec-small active">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/05/2-2.jpg" alt="">
+                                    <img src="product-images/coasters/1.jpg" alt="">
                                 </div>
                                 <div class="product-dec-small">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/05/4-1.jpg" alt="">
+                                    <img src="product-images/coasters/2.jpg" alt="">
                                 </div>
                                 <div class="product-dec-small">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/05/3-2.jpg" alt="">
+                                    <img src="product-images/coasters/3.jpg.jpg" alt="">
                                 </div>
                                 <div class="product-dec-small">
-                                    <img src="https://chhapai.com/wp-content/uploads/2019/05/1-7.jpg" alt="">
+                                    <img src="product-images/coasters/4.jpg" alt="">
                                 </div>
                             </div>
                         </div>

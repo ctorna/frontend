@@ -1,51 +1,59 @@
 <template>
-  <section>
-    <div class="summary">
-      <div class="h5">Summary</div>
-      <table class="table">
+<div class="summary">
+    <div class="h5">Summary</div>
+    <table class="table">
         <tbody>
-          <tr>
-            <th>Per card</th>
-            <td>₹{{getMyPPC()}}</td>
-          </tr>
-          <tr>
-            <th>Paper</th>
-            <td>{{getMyproduct().paper}}</td>
-          </tr>
-          <tr>
-            <th>Size</th>
-            <td>{{getMyproduct().size}}</td>
-          </tr>
-          <tr>
-            <th>Printing</th>
-            <td>{{getMyproduct().side}}</td>
-          </tr>
-          <tr>
-            <th>Quantity</th>
-            <td>{{getMyproduct().quantity}}</td>
-          </tr>
-          <tr v-for="(treat,key) in $store.state.product.myProduct.treatments" :key="key">
-            <th>{{key|summaryShow}}</th>
-<template v-if="['foiling','electroplating','letterpress'].indexOf(key)!==-1"><td><table><tr v-for="(prop,k) in treat" :key="k"><th>{{k|summaryShow}}</th><td>{{prop|summaryShow}}</td></tr></table></td></template>
-<template v-else><td>{{treat}}</td></template>
-            
-          </tr>
-          <tr v-for="(addon,key) in $store.state.product.myProduct.addons" :key="key">
-            <th>{{key|summaryShow}}</th>
-            <td>{{addon.name|summaryShow}}<span>₹{{addon.price}}</span></td>
-          </tr>
-          <tr>
-            <th>Price</th>
-            <td>₹{{getMyPrice()}}</td>
-          </tr>
+            <tr>
+                <th>Per card</th>
+                <td>₹{{getMyPPC()}}</td>
+            </tr>
+            <tr>
+                <th>Paper</th>
+                <td>{{getMyproduct().paper}}</td>
+            </tr>
+            <tr>
+                <th>Size</th>
+                <td>{{getMyproduct().size}}</td>
+            </tr>
+            <tr>
+                <th>Printing</th>
+                <td>{{getMyproduct().side}}</td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td>{{getMyproduct().quantity}}</td>
+            </tr>
+            <tr v-for="(treat,key) in $store.state.product.myProduct.treatments" :key="key">
+                <th>{{key|summaryShow}}</th>
+                <template v-if="['foiling','electroplating','letterpress'].indexOf(key)!==-1">
+                <td>
+                    <table>
+                        <tr v-for="(prop,k) in treat" :key="k">
+                            <th>{{k|summaryShow}}</th>
+                            <td>{{prop|summaryShow}}</td>
+                        </tr>
+                    </table>
+                </td>
+                </template>
+                <template v-else>
+                <td>{{treat}}</td>
+                </template>
+            </tr>
+            <tr v-for="(addon,key) in $store.state.product.myProduct.addons" :key="key">
+                <th>{{key|summaryShow}}</th>
+                <td>{{addon.name|summaryShow}}<span>₹{{addon.price}}</span></td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>₹{{getMyPrice()}}</td>
+            </tr>
         </tbody>
-      </table>
-      <div class="action">
+    </table>
+    <div class="action">
         <a title="Create Design" href="#" class="btn btn-secondary" v-if="false">Create Design</a>
-        <a title="Add to cart" href="#" @click.prevent="addProductToCart()" class="btn btn-primary mt-2">Add to cart</a>
-      </div>
+        <a title="Add to cart" href="#" @click.prevent="addProductToCart()" class="btn btn-primary">Add to cart</a>
     </div>
-  </section>
+</div>
 </template>
 <script>
 import {eventBus} from '../../main';

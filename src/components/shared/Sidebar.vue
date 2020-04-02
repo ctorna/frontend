@@ -36,7 +36,7 @@
 export default {
   mounted(){
      /* Product details sidebar active */
-    jQuery(this.$refs.class_pro_details_sidebar_active).owlCarousel({
+    jQuery('.pro-details-sidebar-active').owlCarousel({
         loop: true,
         nav: true,
         navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
