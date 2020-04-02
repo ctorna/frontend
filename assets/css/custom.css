@@ -384,7 +384,7 @@
     font-size: 32px;
     font-weight: 500;
     line-height: 1.2;
-    font-family: "Alegreya", serif;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -451,7 +451,7 @@
 }
 .parallax-section h2 {
     font-size: 32px;
-    font-family: "Alegreya", serif;
+    font-family: 'Playfair Display', serif;
 }
 .parallax-section a {
     padding: 10px 20px;
