@@ -1,24 +1,94 @@
 <template>
     <section class="chhp-footer">
-        <div class="subscribe-area pt-80 pb-75">
+        <div class="service-area pt-40 pb-10 section-padding-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-wrap mb-30 text-center">
+                            <div class="service-icon">
+                                <i class="dlicon transportation_plane-17"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Free Worldwide Shipping</h4>
+                                <p>Get your Business Cards delivered to anywhere in the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-wrap mb-30 text-center">
+                            <div class="service-icon">
+                                <i class="dlicon emoticons_satisfied"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Complete Happiness Guarantee</h4>
+                                <p>Your satisfaction is our advertisement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-wrap mb-30 text-center">
+                            <div class="service-icon">
+                                <i class="dlicon shopping_credit-locked"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>100% Secure Checkout</h4>
+                                <p>A secure platform for all your digital queries.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-wrap mb-30 text-center">
+                            <div class="service-icon">
+                                <i class="dlicon users-2_a-star"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Customer trust 4.8/5 rating</h4>
+                                <p>A marvellous rating of staggering 4.8 & satisfied customers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-area py-5">
             <div class="container">
-                <div class="subscribe-content-form-wrap gutters-1">
+                <div class="subscribe-content-form-wrap gutters-1 d-none">
                     <div class="subscribe-content col-lg-4">
                         <h2>Get Business</h2>
                         <p>cards online at your doorstep</p>
                     </div>
                     <div id="mc_embed_signup" class="subscribe-form col-lg-8">
                         <form id="mc-embedded-subscribe-form" class="validate subscribe-form-style" novalidate target="_blank" name="mc-embedded-subscribe-form" method="post" action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
-                            <div id="mc_embed_signup_scroll" class="mc-form">
-                                <input class="email" type="email" required placeholder="Your email address…" name="EMAIL" value />
-                                <div class="mc-news" aria-hidden="true">
-                                    <input type="text" value tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" />
-                                </div>
-                                <div class="clear">
-                                    <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe" />
+                            <div class="row">
+                                <div id="mc_embed_signup_scroll" class="mc-form col-sm-4">
+                                    <input class="email" type="email" required placeholder="Your email address…" name="EMAIL" value />
+                                    <div class="mc-news" aria-hidden="true">
+                                        <input type="text" value tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" />
+                                    </div>
+                                    <div class="clear">
+                                        <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe" />
+                                    </div>
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+                <div class="text-center mb-4">
+                    <h2>Talk to us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div class="row gutters-1">
+                    <div class="col-md-3 col-sm-4">
+                        <input type="text" name="name" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="col-md-3 col-sm-4 mt-3 mt-sm-0">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="col-md-3 col-sm-4 mt-3 mt-sm-0">
+                        <input type="text" name="phone" class="form-control" placeholder="Mobile No." required>
+                    </div>
+                    <div class="col-md-3 mt-3 mt-md-0">
+                        <button class="btn btn-primary btn-block text-uppercase">Submit</button>
                     </div>
                 </div>
             </div>

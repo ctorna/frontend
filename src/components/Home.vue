@@ -100,57 +100,7 @@
                 </ul>
             </div>
         </div>
-        <div class="service-area pt-80 pb-50 section-padding-1">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-wrap mb-30 text-center">
-                            <div class="service-icon">
-                                <i class="dlicon shopping_delivery"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>Free Worldwide Shipping</h4>
-                                <p>Get your Business Cards delivered to anywhere in the world.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-wrap mb-30 text-center">
-                            <div class="service-icon">
-                                <i class="dlicon emoticons_satisfied"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>Complete Happiness Guarantee</h4>
-                                <p>Your satisfaction is our advertisement.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-wrap mb-30 text-center">
-                            <div class="service-icon">
-                                <i class="dlicon shopping_credit-locked"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>100% Secure Checkout</h4>
-                                <p>A secure platform for all your digital queries.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-wrap mb-30 text-center">
-                            <div class="service-icon">
-                                <i class="dlicon users-2_a-star"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>Customer trust 4.8/5 rating</h4>
-                                <p>A marvellous rating of staggering 4.8 & satisfied customers.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product-area section-padding-1 padding-60-row-col">
+        <div class="product-area section-padding-1 padding-60-row-col pt-50">
             <div class="container-fluid">
                 <div class="product-tab-list nav mb-50">
                     <a class="active" href="#all" data-toggle="tab">
@@ -176,11 +126,12 @@
                                 <div class="product-wrap mb-60">
                                     <div class="product-img default-overlay mb-25">
                                         <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/all/clear.jpg" alt="Clear business card">
+                                            <img class="default-img" src="assets/images/homepage/cards/enviro/kraft/kraft.jpg" alt="Kraft business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/enviro/kraft/kraft-hover.jpg" alt="Kraft business card">
                                         </a>
                                     </div>
                                     <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Clear business card</a></h3>
+                                        <h3><a href="product.html">Kraft business card</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -188,12 +139,12 @@
                                 <div class="product-wrap mb-60">
                                     <div class="product-img default-overlay mb-25">
                                         <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/all/uncoated.jpg" alt="Uncoated business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/premium/uncoated/uncoated.jpg" alt="Uncoated business card">
+                                            <img class="default-img" src="assets/images/homepage/cards/enviro/recycle/recycle.jpg" alt="Recycle business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/enviro/recycle/recycle-hover.jpg" alt="Recycle business card">
                                         </a>
                                     </div>
                                     <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Uncoated business card</a></h3>
+                                        <h3><a href="product.html">Recycle business card</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -201,50 +152,90 @@
                                 <div class="product-wrap mb-60">
                                     <div class="product-img default-overlay mb-25">
                                         <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/all/black-suede.jpg" alt="Black suede business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/premium/suede/suede.jpg" alt="Black suede business card">
-                                        </a>
-                                    </div>
-                                    <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Black suede business card</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-wrap mb-60">
-                                    <div class="product-img default-overlay mb-25">
-                                        <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/all/embossing.jpg" alt="Embossing business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/emboss/emboss.jpg" alt="Embossing business card">
-                                        </a>
-                                    </div>
-                                    <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Embossing business card</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-wrap mb-60">
-                                    <div class="product-img default-overlay mb-25">
-                                        <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/all/pearl.jpg" alt="Pearl business card">
-                                        </a>
-                                    </div>
-                                    <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Pearl business card</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-wrap mb-60">
-                                    <div class="product-img default-overlay mb-25">
-                                        <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/all/electroplating.jpg" alt="Electroplating business card">
+                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/electroplating/electroplating.jpg" alt="Electroplating business card">
                                             <img class="hover-img" src="assets/images/homepage/cards/bespoke/electroplating/electroplating-hover.jpg" alt="Electroplating business card">
                                         </a>
                                     </div>
                                     <div class="product-content-2 text-center">
                                         <h3><a href="product.html">Electroplating business card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="product-wrap mb-60">
+                                    <div class="product-img default-overlay mb-25">
+                                        <a href="product.html">
+                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/letterpress/letterpress.jpg" alt="Letterpress business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/letterpress/letterpress-hover.jpg" alt="Letterpress business">
+                                        </a>
+                                    </div>
+                                    <div class="product-content-2 text-center">
+                                        <h3><a href="product.html">Letterpress business card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="product-wrap mb-60">
+                                    <div class="product-img default-overlay mb-25">
+                                        <a href="product.html">
+                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/foil/foil.jpg" alt="Foil business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/foil/foil-hover.jpg" alt="Foil business card">
+                                        </a>
+                                    </div>
+                                    <div class="product-content-2 text-center">
+                                        <h3><a href="product.html">Foil business card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="product-wrap mb-60">
+                                    <div class="product-img default-overlay mb-25">
+                                        <a href="product.html">
+                                            <img class="default-img" src="assets/images/homepage/cards/unique/acrylic/acrylic.jpg" alt="Acrylic business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/unique/acrylic/acrylic-hover.jpg" alt="Acrylic business card">
+                                        </a>
+                                    </div>
+                                    <div class="product-content-2 text-center">
+                                        <h3><a href="product.html">Acrylic business card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="product-wrap mb-60">
+                                    <div class="product-img default-overlay mb-25">
+                                        <a href="product.html">
+                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/edge/edge.jpg" alt="Edge business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/edge/edge-hover.jpg" alt="Edge business card">
+                                        </a>
+                                    </div>
+                                    <div class="product-content-2 text-center">
+                                        <h3><a href="product.html">Edge business card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="product-wrap mb-60">
+                                    <div class="product-img default-overlay mb-25">
+                                        <a href="product.html">
+                                            <img class="default-img" src="assets/images/homepage/cards/unique/wood/wood.jpg" alt="Wood business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/unique/wood/wood-hover.jpg" alt="Wood business card">
+                                        </a>
+                                    </div>
+                                    <div class="product-content-2 text-center">
+                                        <h3><a href="product.html">Wood business card</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="product-wrap mb-60">
+                                    <div class="product-img default-overlay mb-25">
+                                        <a href="product.html">
+                                            <img class="default-img" src="assets/images/homepage/cards/enviro/black/black.jpg" alt="Black business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/enviro/black/black-hover.jpg" alt="Black business card">
+                                        </a>
+                                    </div>
+                                    <div class="product-content-2 text-center">
+                                        <h3><a href="product.html">Black business card</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -487,12 +478,12 @@
                                 <div class="product-wrap mb-60">
                                     <div class="product-img default-overlay mb-25">
                                         <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/edge/edge.jpg" alt="Edge business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/edge/edge-hover.jpg" alt="Edge business card">
+                                            <img class="default-img" src="assets/images/homepage/cards/unique/acrylic/acrylic.jpg" alt="Acrylic business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/unique/acrylic/acrylic-hover.jpg" alt="Acrylic business card">
                                         </a>
                                     </div>
                                     <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Edge business card</a></h3>
+                                        <h3><a href="product.html">Acrylic business card</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -500,12 +491,12 @@
                                 <div class="product-wrap mb-60">
                                     <div class="product-img default-overlay mb-25">
                                         <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/emboss/emboss.jpg" alt="Emboss business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/emboss/emboss-hover.jpg" alt="Emboss business card">
+                                            <img class="default-img" src="assets/images/homepage/cards/unique/clear/clear.jpg" alt="Clear business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/unique/clear/clear-hover.jpg" alt="Clear business card">
                                         </a>
                                     </div>
                                     <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Emboss business card</a></h3>
+                                        <h3><a href="product.html">Clear business card</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -513,12 +504,11 @@
                                 <div class="product-wrap mb-60">
                                     <div class="product-img default-overlay mb-25">
                                         <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/electroplating/electroplating.jpg" alt="Electroplating business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/electroplating/electroplating-hover.jpg" alt="Electroplating business card">
+                                            <img class="default-img" src="assets/images/homepage/cards/unique/lasercut/lasercut.jpg" alt="Lasercut business card">
                                         </a>
                                     </div>
                                     <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Electroplating business card</a></h3>
+                                        <h3><a href="product.html">Lasercut business card</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -526,38 +516,12 @@
                                 <div class="product-wrap mb-60">
                                     <div class="product-img default-overlay mb-25">
                                         <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/foil/foil.jpg" alt="Foil business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/foil/foil-hover.jpg" alt="Foil business card">
+                                            <img class="default-img" src="assets/images/homepage/cards/unique/wood/wood.jpg" alt="Wood business card">
+                                            <img class="hover-img" src="assets/images/homepage/cards/unique/wood/wood-hover.jpg" alt="Wood business card">
                                         </a>
                                     </div>
                                     <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Foil business card</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-wrap mb-60">
-                                    <div class="product-img default-overlay mb-25">
-                                        <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/letterpress/letterpress.jpg" alt="Letterpress business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/letterpress/letterpress-hover.jpg" alt="Letterpress business">
-                                        </a>
-                                    </div>
-                                    <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Letterpress business card</a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-wrap mb-60">
-                                    <div class="product-img default-overlay mb-25">
-                                        <a href="product.html">
-                                            <img class="default-img" src="assets/images/homepage/cards/bespoke/spot-uv/spot-uv.jpg" alt="Spot uv business card">
-                                            <img class="hover-img" src="assets/images/homepage/cards/bespoke/spot-uv/spot-uv-hover.jpg" alt="Spot uv business card">
-                                        </a>
-                                    </div>
-                                    <div class="product-content-2 text-center">
-                                        <h3><a href="product.html">Spot UV business card</a></h3>
+                                        <h3><a href="product.html">Wood business card</a></h3>
                                     </div>
                                 </div>
                             </div>
@@ -722,12 +686,12 @@
         <section class="blog">
             <div class="row no-gutters">
                 <div class="col-md-6">
-                    <div class="banner-wrap default-overlay banner-zoom">
+                    <div class="banner-wrap banner-zoom">
                         <a href="/bespoke-business-cards">
                             <div class="banner-img">
-                                <img src="assets/images/blog/blog-1/trending.jpg" alt="Bespoke business cards">
+                                <img src="/assets/images/homepage/cards/bespoke/edge/edge-hover.jpg" alt="Bespoke business cards">
                             </div>
-                            <div class="banner-content-8 banner-position-6">
+                            <div class="banner-content-8">
                                 <h3>Bespoke business cards</h3>
                                 <p>“You’ll never have the second chance to make a first impression.”</p>
                             </div>
@@ -735,12 +699,12 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="banner-wrap default-overlay banner-zoom">
+                    <div class="banner-wrap banner-zoom">
                         <a href="/why-influencers-should-have-business-cards">
                             <div class="banner-img">
-                                <img src="assets/images/slider/slider3.jpg" alt="blog">
+                                <img src="/assets/images/homepage/cards/premium/matt/matt.jpg" alt="blog">
                             </div>
-                            <div class="banner-content-8 banner-position-6">
+                            <div class="banner-content-8">
                                 <h3>Why influencers should have business cards</h3>
                                 <p>“Influencers are dreamers, they are leaders with a vision.” And your vision sure needs to be brought to reality.</p>
                             </div>

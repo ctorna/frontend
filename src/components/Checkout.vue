@@ -1,235 +1,251 @@
 <template>
-  <!-- checkout start -->
-  <div class="checkout-main-area py-4 py-md-5">
-    <div class="container">
-      <div class="customer-zone mb-30">
-        <p class="cart-page-title">
-          Have a coupon?
-          <a class="checkout-click" href="#">Click here to enter your code</a>
-        </p>
-        <div class="checkout-login-info">
-          <p>If you have a coupon code, please apply it below.</p>
-          <form action="#">
-            <input type="text" placeholder="Coupon code" />
-            <input type="submit" value="Apply Coupon" />
-          </form>
-        </div>
-      </div>
-      <div class="checkout-wrap">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="billing-info-wrap">
-              <h3>Billing Details</h3>
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <div class="billing-info mb-25">
-                    <label>
-                      First name
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.first_name"/>
-                  </div>
+  <section>
+    <div class="breadcrumb-area breadcrumb-bg section-padding-1">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <div class="breadcrumb-title">
+                    <h2>Checkout</h2>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="billing-info mb-25">
-                    <label>
-                      Last name
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.last_name"/>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="billing-info mb-25">
-                    <label>
-                      GST No. (optional)
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.gstno"/>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="billing-info mb-25">
-                    <label>
-                      Company name (optional)
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.company"/>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="billing-select mb-25">
-                    <label>
-                      Country
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <select class="select-active" v-model="customer.country">
-                      <option value="">....</option>
-                      <option v-for="(country,key) in countries" :key="key" :value="key">{{country}}</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="billing-info mb-25">
-                    <label>
-                      Street address
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input
-                      class="billing-address"
-                      placeholder="House number and street name"
-                      type="text"
-                    v-model="customer.address_1"/>
-                    <input placeholder="Apartment, suite, unit etc. (optional)" type="text" v-model="customer.address_2"/>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="billing-info mb-25">
-                    <label>
-                      Town / City
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.city" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="billing-select mb-25">
-                    <label>
-                      District
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <select class="select-active" v-model="customer.state">
-                      <option value="">....</option>
-                      <option v-for="(state,key) in states" :key="key" :value="key">{{state}}</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <div class="billing-info mb-25">
-                    <label>
-                      Postcode / ZIP (optional)
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.postcode"/>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <div class="billing-info mb-25">
-                    <label>
-                      Phone
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.phone"/>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-12">
-                  <div class="billing-info mb-25">
-                    <label>
-                      Email Address
-                      <abbr class="required" title="required">*</abbr>
-                    </label>
-                    <input type="text" v-model="customer.email"/>
-                  </div>
-                </div>
-              </div>
-              <div class="additional-info-wrap">
-                <h3>Additional information</h3>
-                <label>Order notes (optional)</label>
-                <textarea
-                  placeholder="Notes about your order, e.g. special notes for delivery. "
-                  name="message" v-model="customer.note"
-                ></textarea>
-              </div>
+                <ul>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li class="active"> Checkout </li>
+                </ul>
             </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="your-order-area">
-              <h3>Your order</h3>
-              <div class="your-order-wrap gray-bg-4">
-                <div class="your-order-info-wrap">
-                  <div class="your-order-info">
-                    <ul>
-                      <li>
-                        Product
-                        <span>Total</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="your-order-middle">
-                    <ul>
-                      <li v-for="(product,key,index) in getCartProducts" :key="index">
-                        <template v-if="typeof product.qPrice !=='undefined'">
-                          {{product.label}} {{product.quantity}} X ₹{{product.qPrice.ppc}}
-                          <span>₹{{product.qPrice.price}}</span>
-                        </template>
-                        <template v-else>
-                          {{product.label}} X 1
-                          <span>₹{{product.price}}</span>
-                        </template>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="your-order-info order-subtotal">
-                    <ul>
-                      <li v-for="(price,tax) in getTaxSlabs" :key="tax">
-                        
-                          {{tax}}% IGST
-                          <span>₹{{price}}</span>
-                        
-                      
-                       
-                      </li>
-                      
-                    </ul>
-                  </div>
-                  <div class="your-order-info order-total">
-                    <ul>
-                      <li>
-                        Total
-                        <span>₹{{getCartPrice}}</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="payment-method">
-                  <h5>Payemnt Method</h5>
-                  <div class="custom-radio custom-radio-block">
-                    <div class="radio">
-                      <label>
-                        <input type="radio" class="form-check-input" name="payment_mode" checked />
-                        <i class="form-icon"></i> Razorpay
-                      </label>
-                    </div>
-                    <!--div class="radio">
-                      <label>
-                        <input type="radio" class="form-check-input" name="payment_mode" />
-                        <i class="form-icon"></i> PayPal
-                      </label>
-                    </div-->
-                  </div>
-                </div>
-                <div class="condition-wrap">
-                  <div class="condition-form mb-25">
-                    <input type="checkbox" checked="checked" v-model="termsChecked"/>
-                    <span>
-                      I have read and agree to the website
-                      <a href="terms-conditions.html">terms and conditions</a>
-                      <span class="star">*</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="Place-order mt-30">
-                <a @click.prevent="placeOrder()" v-if="doPlaceOrder">Place Order</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- checkout end -->
+    <!-- checkout start -->
+    <div class="checkout-main-area py-4 py-md-5">
+        <div class="container">
+          <div class="customer-zone mb-30">
+            <p class="cart-page-title">
+              Have a coupon?
+              <a class="checkout-click" href="#">Click here to enter your code</a>
+            </p>
+            <div class="checkout-login-info">
+              <p>If you have a coupon code, please apply it below.</p>
+              <form action="#">
+                <input type="text" placeholder="Coupon code" />
+                <input type="submit" value="Apply Coupon" />
+              </form>
+            </div>
+          </div>
+          <div class="checkout-wrap">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="billing-info-wrap">
+                  <h3>Billing Details</h3>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="billing-info mb-25">
+                        <label>
+                          First name
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.first_name"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                      <div class="billing-info mb-25">
+                        <label>
+                          Last name
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.last_name"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="billing-info mb-25">
+                        <label>
+                          GST No. (optional)
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.gstno"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="billing-info mb-25">
+                        <label>
+                          Company name (optional)
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.company"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="billing-select mb-25">
+                        <label>
+                          Country
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <select class="select-active" v-model="customer.country">
+                          <option value="">....</option>
+                          <option v-for="(country,key) in countries" :key="key" :value="key">{{country}}</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="billing-info mb-25">
+                        <label>
+                          Street address
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input
+                          class="billing-address"
+                          placeholder="House number and street name"
+                          type="text"
+                        v-model="customer.address_1"/>
+                        <input placeholder="Apartment, suite, unit etc. (optional)" type="text" v-model="customer.address_2"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="billing-info mb-25">
+                        <label>
+                          Town / City
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.city" />
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="billing-select mb-25">
+                        <label>
+                          District
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <select class="select-active" v-model="customer.state">
+                          <option value="">....</option>
+                          <option v-for="(state,key) in states" :key="key" :value="key">{{state}}</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                      <div class="billing-info mb-25">
+                        <label>
+                          Postcode / ZIP (optional)
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.postcode"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                      <div class="billing-info mb-25">
+                        <label>
+                          Phone
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.phone"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                      <div class="billing-info mb-25">
+                        <label>
+                          Email Address
+                          <abbr class="required" title="required">*</abbr>
+                        </label>
+                        <input type="text" v-model="customer.email"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional-info-wrap">
+                    <h3>Additional information</h3>
+                    <label>Order notes (optional)</label>
+                    <textarea
+                      placeholder="Notes about your order, e.g. special notes for delivery. "
+                      name="message" v-model="customer.note"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="your-order-area">
+                  <h3>Your order</h3>
+                  <div class="your-order-wrap gray-bg-4">
+                    <div class="your-order-info-wrap">
+                      <div class="your-order-info">
+                        <ul>
+                          <li>
+                            Product
+                            <span>Total</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="your-order-middle">
+                        <ul>
+                          <li v-for="(product,key,index) in getCartProducts" :key="index">
+                            <template v-if="typeof product.qPrice !=='undefined'">
+                              {{product.label}} {{product.quantity}} X ₹{{product.qPrice.ppc}}
+                              <span>₹{{product.qPrice.price}}</span>
+                            </template>
+                            <template v-else>
+                              {{product.label}} X 1
+                              <span>₹{{product.price}}</span>
+                            </template>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="your-order-info order-subtotal">
+                        <ul>
+                          <li v-for="(price,tax) in getTaxSlabs" :key="tax">
+                            
+                              {{tax}}% IGST
+                              <span>₹{{price}}</span>
+                            
+                          
+                           
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      <div class="your-order-info order-total">
+                        <ul>
+                          <li>
+                            Total
+                            <span>₹{{getCartPrice}}</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="payment-method">
+                      <h5>Payemnt Method</h5>
+                      <div class="custom-radio custom-radio-block">
+                        <div class="radio">
+                          <label>
+                            <input type="radio" class="form-check-input" name="payment_mode" checked />
+                            <i class="form-icon"></i> Razorpay
+                          </label>
+                        </div>
+                        <!--div class="radio">
+                          <label>
+                            <input type="radio" class="form-check-input" name="payment_mode" />
+                            <i class="form-icon"></i> PayPal
+                          </label>
+                        </div-->
+                      </div>
+                    </div>
+                    <div class="condition-wrap">
+                      <div class="condition-form mb-25">
+                        <input type="checkbox" checked="checked" v-model="termsChecked"/>
+                        <span>
+                          I have read and agree to the website
+                          <a href="terms-conditions.html">terms and conditions</a>
+                          <span class="star">*</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="Place-order mt-30" v-if="doPlaceOrder">
+                    <a @click.prevent="placeOrder()">Place Order</a>
+                  </div>
+                </div>
+                <img src="assets/images/homepage/trust-symbols.jpg" class="img-fluid mt-4">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- checkout end -->
+</section>
 </template>
 <script>
 import { mapActions, mapGetters, mapMutations } from "vuex";
