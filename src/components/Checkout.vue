@@ -16,7 +16,7 @@
     <!-- checkout start -->
     <div class="checkout-main-area py-4 py-md-5">
         <div class="container">
-          <div class="customer-zone mb-30">
+          <div class="customer-zone mb-30 d-none">
             <p class="cart-page-title">
               Have a coupon?
               <a class="checkout-click" href="#">Click here to enter your code</a>
@@ -239,6 +239,16 @@
                   </div>
                 </div>
                 <img src="assets/images/homepage/trust-symbols.jpg" class="img-fluid mt-4">
+                <h3 class="mt-4 mb-3 fw-600">Satisfied customers</h3>
+                <div class="testimonial-item">
+                    <div class="testimonial-thumb">
+                        <img src="assets/images/testimonial/harkirat.jpg" alt="Harkirat Singh">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>I never worry about the quality of the product. Very professional operations. The design module provided is un-matched. The printing solutions provided by Chhapai are top class. Definitely a market leader in printing.</p>
+                        <h2>Harkirat Singh</h2>
+                    </div>
+                </div>
               </div>
             </div>
           </div>

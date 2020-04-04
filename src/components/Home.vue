@@ -4,7 +4,7 @@
             <div class="container-fluid">
                 <div class="notification-wrapper">
                     <div class="notification-content ml-285">
-                        <h3>Sale Weekend Off 30-50% All Items</h3>
+                        <h3>Best Business Cards on the web with Free Worldwide Shipping*</h3>
                         <div class="notification-btn">
                             <a href="shop-fullwide.html">Shop now</a>
                         </div>
@@ -27,8 +27,8 @@
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="main-slider-content-1 slider-content-mrg-l-1">
-                                    <h1 class="animated">Want your brand <br class="d-none d-md-block">to speak cosmopolitan?</h1>
-                                    <span class="animated">Sculpted to be chic, elegant & unlike any other.</span>
+                                    <h1 class="animated">Looking for an alternative to a traditional Business Card?</h1>
+                                    <span class="animated">Presenting laser cut business cards, polished & engraved.</span>
                                     <div class="slider-btn-1">
                                         <router-link class="animated" to="/bcard/1">Shop Now</router-link>
                                     </div>
@@ -45,8 +45,8 @@
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="main-slider-content-1 slider-content-mrg-l-1">
-                                    <h1 class="animated">Need a dazzling card <br class="d-none d-md-block">to cabinet your persona?</h1>
-                                    <span class="animated">Taking artistry to another level with awe-inspiring & startling designs.</span>
+                                    <h1 class="animated">Fancy an Acrylic Business Card?</h1>
+                                    <span class="animated">Here is a business card as unique as your brand & personality.</span>
                                     <div class="slider-btn-1">
                                         <router-link class="animated" to="/bcard/3">Shop Now</router-link>
                                     </div>
@@ -63,8 +63,8 @@
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="main-slider-content-1 slider-content-mrg-l-1">
-                                    <h1 class="animated">You think the design <br class="d-none d-md-block">& we make it!</h1>
-                                    <span class="animated">A sophisticated finish with dramatic cuts and intensely designed business cards.</span>
+                                    <h1 class="animated">Want something different?</h1>
+                                    <span class="animated">Be the spotlight with your electroplated Business cards, sculpted to chic & elegance.</span>
                                     <div class="slider-btn-1">
                                         <router-link class="animated" to="/bcard/14">Shop Now</router-link>
                                     </div>
@@ -81,8 +81,26 @@
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="main-slider-content-1 slider-content-mrg-l-1">
-                                    <h1 class="animated">Providing you with a <br class="d-none d-md-block">better choice.</h1>
-                                    <span class="animated">Get an environmental friendly visiting card and do your bit to save the planet.</span>
+                                    <h1 class="animated">Are you environmentally conscious?</h1>
+                                    <span class="animated">We have something just right for you, get the environmentally friendly business card and do your bit for the planet.</span>
+                                    <div class="slider-btn-1">
+                                        <router-link class="animated" to="/bcard/1">Shop Now</router-link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-main-slider slider-animated-1" data-dot="05">
+                        <div class="row align-items-center flex-row-reverse">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="main-slider-img">
+                                    <img src="assets/images/slider/slider-5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="main-slider-content-1 slider-content-mrg-l-1">
+                                    <h1 class="animated">Quality & Craftsmanship</h1>
+                                    <span class="animated">Here you find quality, craftsmanship, honesty & excellence working for perfection.</span>
                                     <div class="slider-btn-1">
                                         <router-link class="animated" to="/bcard/1">Shop Now</router-link>
                                     </div>

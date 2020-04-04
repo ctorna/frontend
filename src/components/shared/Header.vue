@@ -120,10 +120,7 @@
                       <a class="menu-title" href="#">Unique Cards</a>
                       <ul>
                         <li>
-                          <router-link
-                            to="/bcard/1"
-                            @click.native="scrollToTop()"
-                          >Laser Cut Shaped Cards</router-link>
+                          <router-link to="/bcard/1" @click.native="scrollToTop()">Laser Cut Shaped Cards</router-link>
                         </li>
                         <li>
                           <router-link to="/bcard/1" @click.native="scrollToTop()">Wood Cards</router-link>
@@ -132,7 +129,7 @@
                           <router-link to="/bcard/1" @click.native="scrollToTop()">Acrylic Cards</router-link>
                         </li>
                         <li>
-                          <router-link to="/bcard/1" @click.native="scrollToTop()">Board Cards</router-link>
+                          <router-link to="/bcard/20" @click.native="scrollToTop()">Board Cards</router-link>
                         </li>
                       </ul>
                     </li>
@@ -438,6 +435,12 @@ export default {
         imgPosition: '5% calc(8% + 0)',
         imgSize: 'auto',
     });
+    jQuery('.img-popup').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
     jQuery('.video-popup').magnificPopup({
         type: 'iframe',
         mainClass: 'mfp-fade',
@@ -450,12 +453,9 @@ export default {
     new WOW().init();
     var $easyzoom = $('.easyzoom').easyZoom();
 
-    jQuery('.img-popup').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
+    jQuery('.select-active').select2();
+
+    
     /*====== SidebarSearch ======*/
     function sidebarSearch(me) {
       var searchTrigger = jQuery(me.$refs.class_search_active),

@@ -43,7 +43,7 @@
                 <th>{{key|summaryShow}}</th>
                 <td>{{addon.name|summaryShow}}<span>₹{{addon.price}}</span></td>
             </tr>
-            <tr>
+            <tr class="price">
                 <th>Price</th>
                 <td>₹{{getMyPrice()}}</td>
             </tr>

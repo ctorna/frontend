@@ -9,30 +9,8 @@
                                 <i class="dlicon transportation_plane-17"></i>
                             </div>
                             <div class="service-content">
-                                <h4>Free Worldwide Shipping</h4>
-                                <p>Get your Business Cards delivered to anywhere in the world.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-wrap mb-30 text-center">
-                            <div class="service-icon">
-                                <i class="dlicon emoticons_satisfied"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>Complete Happiness Guarantee</h4>
-                                <p>Your satisfaction is our advertisement.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="service-wrap mb-30 text-center">
-                            <div class="service-icon">
-                                <i class="dlicon shopping_credit-locked"></i>
-                            </div>
-                            <div class="service-content">
-                                <h4>100% Secure Checkout</h4>
-                                <p>A secure platform for all your digital queries.</p>
+                                <h4>Free Shipping</h4>
+                                <p>Get free shipping on orders above Rs.1500 or USD 150</p>
                             </div>
                         </div>
                     </div>
@@ -42,8 +20,30 @@
                                 <i class="dlicon users-2_a-star"></i>
                             </div>
                             <div class="service-content">
-                                <h4>Customer trust 4.8/5 rating</h4>
-                                <p>A marvellous rating of staggering 4.8 & satisfied customers.</p>
+                                <h4>User Satisfaction</h4>
+                                <p>Providing commendable user satisfaction over 15 years</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-wrap mb-30 text-center">
+                            <div class="service-icon">
+                                <i class="dlicon shopping_credit-locked"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Secure platform</h4>
+                                <p>A platform built with utmost care & security for your better experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-wrap mb-30 text-center">
+                            <div class="service-icon">
+                                <i class="dlicon emoticons_satisfied"></i>
+                            </div>
+                            <div class="service-content">
+                                <h4>Happiness guaranteed</h4>
+                                <p>100% happiness guaranteed with our excellently engineered Business cards.</p>
                             </div>
                         </div>
                     </div>
@@ -75,11 +75,10 @@
                 </div>
                 <div class="text-center mb-4">
                     <h2>Talk to us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </div>
                 <div class="row gutters-1">
                     <div class="col-md-3 col-sm-4">
-                        <input type="text" name="name" class="form-control" placeholder="Name" required>
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="col-md-3 col-sm-4 mt-3 mt-sm-0">
                         <input type="email" name="email" class="form-control" placeholder="Email Address" required>
