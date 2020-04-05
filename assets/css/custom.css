@@ -397,9 +397,20 @@
     font-size: 24px;
 }
 /*Homepage*/
+.notification-wrapper {
+    padding: 10px 0;
+}
 .notification-wrapper .notification-content h3 {
     letter-spacing: 0;
     line-height: 1.4;
+    font-weight: 400;
+    text-transform: inherit;
+}
+.notification-wrapper .notification-content .notification-btn {
+    min-width: 190px;
+}
+.home-slider {
+    background-color: #000;
 }
 .slider-content-mrg-l-1 {
     padding-left: 5%;
@@ -412,23 +423,26 @@
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
     margin-top: 0;
+    color: #fff;
 }
 .main-slider-content-1 span {
     letter-spacing: 0;
+    color: #fff;
 }
 .slider-btn-1 a {
     margin-left: 0;
     padding: 10px 20px;
-    border: 2px solid #262626;
+    border: 2px solid #fff;
     margin-top: 30px;
     font-size: 16px;
     text-transform: uppercase;
     line-height: initial;
     font-weight: 500;
+    color: #fff;
 }
 .slider-btn-1 a:hover {
-    background-color: #262626;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 .slider-btn-1 a:before {
     display: none;
@@ -436,8 +450,14 @@
 .main-slider-img {
     overflow: hidden;
 }
-.main-slider-active .owl-item.active .main-slider-img img {
-
+.slider-dot-style-1 .owl-dots .owl-dot {
+    color: rgba(255, 255, 255, 0.2);
+}
+.slider-dot-style-1 .owl-dots .owl-dot:hover, .slider-dot-style-1 .owl-dots .owl-dot.active {
+    color: #fff;
+}
+.slider-dot-style-1 .owl-dots .owl-dot:hover::before, .slider-dot-style-1 .owl-dots .owl-dot.active::before {
+    background-color: #fff;
 }
 .slider-social ul li a {
     color: #efefef;
@@ -1134,7 +1154,23 @@
     width: 50px;
     height: 50px;
 }
+#scrollUp {
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    bottom: 80px;
+    right: 20px;
+}
+#scrollUp i {
+    line-height: inherit;
+}
 @media (min-width: 768px) {
+    .notification-wrapper .notification-content h3 {
+        font-size: 20px;
+    }
+    .notification-wrapper .notification-content .notification-btn a {
+        padding: 12px 30px;
+    }
     .slider-content-mrg-l-1 {
         padding-left: 10%;
         padding-right: 5%;

@@ -455,6 +455,23 @@ export default {
 
     jQuery('.select-active').select2();
 
+    jQuery.scrollUp({
+        scrollText: '<i class="fa fa-angle-up"></i>',
+        easingType: 'linear',
+        scrollSpeed: 900,
+        animation: 'fade'
+    });
+
+    jQuery(function() {
+      jQuery('a.page-scroll').on('click', function(event) {
+        var $anchor = $(this);
+        jQuery('html, body').stop().animate({
+          scrollTop: $($anchor.attr('data-target')).offset().top - 0
+        }, 2000, 'easeInOutExpo');
+        event.preventDefault();
+      });
+    });
+
     
     /*====== SidebarSearch ======*/
     function sidebarSearch(me) {

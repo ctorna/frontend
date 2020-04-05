@@ -4,9 +4,9 @@
             <div class="container-fluid">
                 <div class="notification-wrapper">
                     <div class="notification-content ml-285">
-                        <h3>Best Business Cards on the web with Free Worldwide Shipping*</h3>
+                        <h3>Free worldwide shipping on the finest business cards on the web.</h3>
                         <div class="notification-btn">
-                            <a href="shop-fullwide.html">Shop now</a>
+                            <a href="javascript:" class="page-scroll" data-target="#products">Shop now</a>
                         </div>
                     </div>
                     <div class="notification-close">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <div class="slider-area bg-light-pink-2">
+        <div class="slider-area home-slider">
             <div class="container-fluid p-0">
                 <div class="main-slider-active owl-carousel slider-dot-position-1 slider-dot-style-1" ref="class_main_slider_active">
                     <div class="single-main-slider slider-animated-1" data-dot="01">
@@ -118,7 +118,7 @@
                 </ul>
             </div>
         </div>
-        <div class="product-area section-padding-1 padding-60-row-col pt-50">
+        <div class="product-area section-padding-1 padding-60-row-col pt-50" id="products">
             <div class="container-fluid">
                 <div class="product-tab-list nav mb-50">
                     <a class="active" href="#all" data-toggle="tab">
@@ -552,8 +552,8 @@
             <div class="jarallax parallax-img" style="background-image: url(assets/images/homepage/bg.jpg);">
                 <div class="container position-relative">
                     <div class="text-center">
-                        <h2 class="text-white">Want your brand <br class="d-none d-md-block">to speak cosmopolitan?</h2>
-                        <a href="/bcard/1" class="btn">Shop Now</a>
+                        <h2 class="text-white">Get a touch & feel of <br class="d-none d-md-block">all our papers and treatments.</h2>
+                        <a href="/sample-pack" class="btn">Buy a sample pack</a>
                     </div>
                 </div>
             </div>
@@ -716,7 +716,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt-3 mt-md-0">
                     <div class="banner-wrap banner-zoom">
                         <a href="/why-influencers-should-have-business-cards">
                             <div class="banner-img">
