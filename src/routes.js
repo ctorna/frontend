@@ -29,6 +29,9 @@ import StartupCoupons from './components/pages/StartupCoupons.vue';
 import Terms from './components/pages/Terms.vue';
 import Thanks from './components/pages/ThankYou.vue';
 import Treatments from './components/pages/Treatments.vue';
+import Franchise from './components/pages/Franchise.vue';
+import Reseller from './components/pages/Reseller.vue';
+import SMM from './components/pages/SMM.vue';
 import { store } from './store/store';
 
 export const routes = [
@@ -61,6 +64,9 @@ export const routes = [
     { path: '/terms-and-conditions', component: Terms },
     { path: '/thanks', name: 'thanks', component: Thanks },
     { path: '/treatments', component: Treatments },
+    { path: '/franchise', component: Franchise },
+    { path: '/reseller', component: Reseller },
+    { path: '/smm', component: SMM },
     { path: '/bcard/:id', component: Bcard },
     {
         path: '/checkout',

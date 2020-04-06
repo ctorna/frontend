@@ -174,6 +174,12 @@
                         <span>Design Using Templates</span>
                       </router-link>
                     </li>
+                    <li>
+                      <router-link to="/smm" @click.native="scrollToTop()">
+                        <img src="assets/images/menu/smm.jpg" />
+                        <span>Social Media Marketing</span>
+                      </router-link>
+                    </li>
                   </ul>
                 </li>
                 <li class="mega-menu big">

@@ -562,12 +562,12 @@
             <div class="row no-gutters">
                 <div class="col-sm-6">
                     <div class="pro-details-banner mb-0">
-                        <a class="video-popup" href="https://player.vimeo.com/video/181061053?autoplay=1&amp;byline=0&amp;collections=0"><img src="assets/images/homepage/cards/bespoke/electroplating/electroplating.jpg" alt=""></a>
+                        <a class="video-popup" href="https://www.youtube.com/watch?v=DC79DBP5btI"><img src="assets/images/homepage/cards/bespoke/electroplating/electroplating.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="pro-details-banner mb-0">
-                        <a class="video-popup" href="https://player.vimeo.com/video/181061053?autoplay=1&amp;byline=0&amp;collections=0"><img src="assets/images/homepage/cards/premium/uncoated/uncoated.jpg" alt=""></a>
+                        <a class="video-popup" href="https://www.youtube.com/watch?v=qzgTmJEaVGs?autoplay=true"><img src="assets/images/homepage/cards/premium/uncoated/uncoated.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
