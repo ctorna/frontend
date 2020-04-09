@@ -175,11 +175,8 @@
                     <div class="row">
                       <div class="col-md-5 col-lg-4">
                         <div class="pro-details-banner">
-                          <a
-                            class="video-popup"
-                            href="https://player.vimeo.com/video/181061053?autoplay=1&amp;byline=0&amp;collections=0"
-                          >
-                            <img src="assets/images/product-details/pro-details-banner.jpg" alt />
+                          <a class="video-popup" href="https://www.youtube.com/watch?v=qzgTmJEaVGs">
+                            <img src="https://via.placeholder.com/1200x800" alt="" />
                           </a>
                         </div>
                       </div>
@@ -354,15 +351,13 @@
   </section>
 </template>
 <script>
-import PageSidebar from "../shared/Sidebar.vue";
-export default {
-    data(){
-return {
-    
-}
-    },
-    components:{
-     PageSidebar   
+    import PageSidebar from "../shared/Sidebar.vue";
+    export default {
+        data(){
+            return {}
+        },
+        components:{
+            PageSidebar   
+        }
     }
-}
 </script>

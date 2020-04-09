@@ -20,18 +20,15 @@
                     <div class="col-lg-6">
                         <div class="blog-wrap-3 mb-50">
                             <div class="blog-img-3 mb-20">
-                                <a href="blog-details.html"><img src="https://via.placeholder.com/500x250" alt="blog"></a>
+                                <a href="/bespoke-business-cards"><img src="/assets/images/homepage/cards/bespoke/edge/edge-hover.jpg" alt="blog"></a>
                             </div>
                             <div class="blog-content-3">
-                                <h3><a href="blog-details.html">Lorem Ipsum doler sit amet</a></h3>
+                                <h3><a href="/bespoke-business-cards">Bespoke business cards</a></h3>
                                 <div class="blog-meta">
-                                    <ul>
-                                        <li><a href="#">December 5, 2018</a></li>
-                                        <li>By <a href="#">Joe Doe</a></li>
-                                    </ul>
+                                    <ul><li>March 30, 2020 By Chhapai</li></ul>
                                 </div>
                                 <div class="blog-btn-2 blog-btn-2-red mt-35">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="/bespoke-business-cards">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -39,18 +36,15 @@
                     <div class="col-lg-6">
                         <div class="blog-wrap-3 mb-50">
                             <div class="blog-img-3 mb-20">
-                                <a href="blog-details.html"><img src="https://via.placeholder.com/500x250" alt="blog"></a>
+                                <a href="/why-influencers-should-have-business-cards"><img src="/assets/images/homepage/cards/premium/matt/matt.jpg" alt="blog"></a>
                             </div>
                             <div class="blog-content-3">
-                                <h3><a href="blog-details.html">Lorem Ipsum doler sit amet</a></h3>
+                                <h3><a href="/why-influencers-should-have-business-cards">Why influencers should have business cards</a></h3>
                                 <div class="blog-meta">
-                                    <ul>
-                                        <li><a href="#">December 5, 2018</a></li>
-                                        <li>By <a href="#">Joe Doe</a></li>
-                                    </ul>
+                                    <ul><li>March 30, 2020 By Chhapai</li></ul>
                                 </div>
                                 <div class="blog-btn-2 blog-btn-2-red mt-35">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="/why-influencers-should-have-business-cards">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -58,18 +52,15 @@
                     <div class="col-lg-6">
                         <div class="blog-wrap-3 mb-50">
                             <div class="blog-img-3 mb-20">
-                                <a href="blog-details.html"><img src="https://via.placeholder.com/500x250" alt="blog"></a>
+                                <a href="/10-tips-for-your-next-business-card-design-part-1"><img src="/assets/images/homepage/cards/enviro/kraft/kraft.jpg" alt="blog"></a>
                             </div>
                             <div class="blog-content-3">
-                                <h3><a href="blog-details.html">Lorem Ipsum doler sit amet</a></h3>
+                                <h3><a href="/10-tips-for-your-next-business-card-design-part-1">10 tips for your next business card design - Part 1</a></h3>
                                 <div class="blog-meta">
-                                    <ul>
-                                        <li><a href="#">December 5, 2018</a></li>
-                                        <li>By <a href="#">Joe Doe</a></li>
-                                    </ul>
+                                    <ul><li>April 4, 2020 By Chhapai</li></ul>
                                 </div>
                                 <div class="blog-btn-2 blog-btn-2-red mt-35">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="/10-tips-for-your-next-business-card-design-part-1">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -77,18 +68,15 @@
                     <div class="col-lg-6">
                         <div class="blog-wrap-3 mb-50">
                             <div class="blog-img-3 mb-20">
-                                <a href="blog-details.html"><img src="https://via.placeholder.com/500x250" alt="blog"></a>
+                                <a href="/10-tips-for-your-next-business-card-design-part-2"><img src="/assets/images/homepage/cards/bespoke/electroplating/electroplating.jpg" alt="blog"></a>
                             </div>
                             <div class="blog-content-3">
-                                <h3><a href="blog-details.html">Lorem Ipsum doler sit amet</a></h3>
+                                <h3><a href="/10-tips-for-your-next-business-card-design-part-2">10 tips for your next business card design - Part 2</a></h3>
                                 <div class="blog-meta">
-                                    <ul>
-                                        <li><a href="#">December 5, 2018</a></li>
-                                        <li>By <a href="#">Joe Doe</a></li>
-                                    </ul>
+                                    <ul><li>April 4, 2020 By Chhapai</li></ul>
                                 </div>
                                 <div class="blog-btn-2 blog-btn-2-red mt-35">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="/10-tips-for-your-next-business-card-design-part-2">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -96,18 +84,15 @@
                     <div class="col-lg-6">
                         <div class="blog-wrap-3 mb-50">
                             <div class="blog-img-3 mb-20">
-                                <a href="blog-details.html"><img src="https://via.placeholder.com/500x250" alt="blog"></a>
+                                <a href="/10-tips-for-your-next-business-card-design-part-3"><img src="/assets/images/homepage/cards/premium/uncoated/uncoated.jpg" alt="blog"></a>
                             </div>
                             <div class="blog-content-3">
-                                <h3><a href="blog-details.html">Lorem Ipsum doler sit amet</a></h3>
+                                <h3><a href="/10-tips-for-your-next-business-card-design-part-3">10 tips for your next business card design - Part 3</a></h3>
                                 <div class="blog-meta">
-                                    <ul>
-                                        <li><a href="#">December 5, 2018</a></li>
-                                        <li>By <a href="#">Joe Doe</a></li>
-                                    </ul>
+                                    <ul><li>April 4, 2020 By Chhapai</li></ul>
                                 </div>
                                 <div class="blog-btn-2 blog-btn-2-red mt-35">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="/10-tips-for-your-next-business-card-design-part-3">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -115,24 +100,21 @@
                     <div class="col-lg-6">
                         <div class="blog-wrap-3 mb-50">
                             <div class="blog-img-3 mb-20">
-                                <a href="blog-details.html"><img src="https://via.placeholder.com/500x250" alt="blog"></a>
+                                <a href="/10-tips-for-your-next-business-card-design-part-4"><img src="/assets/images/homepage/cards/bespoke/foil/foil-hover.jpg" alt="blog"></a>
                             </div>
                             <div class="blog-content-3">
-                                <h3><a href="blog-details.html">Lorem Ipsum doler sit amet</a></h3>
+                                <h3><a href="/10-tips-for-your-next-business-card-design-part-4">10 tips for your next business card design - Part 4</a></h3>
                                 <div class="blog-meta">
-                                    <ul>
-                                        <li><a href="#">December 5, 2018</a></li>
-                                        <li>By <a href="#">Joe Doe</a></li>
-                                    </ul>
+                                    <ul><li>April 4, 2020 By Chhapai</li></ul>
                                 </div>
                                 <div class="blog-btn-2 blog-btn-2-red mt-35">
-                                    <a href="blog-details.html">Read More</a>
+                                    <a href="/10-tips-for-your-next-business-card-design-part-4">Read More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="pro-pagination-style text-center">
+                <div class="pro-pagination-style text-center d-none">
                     <ul>
                         <li><a class="active" href="#">1</a></li>
                         <li><a href="#">2</a></li>

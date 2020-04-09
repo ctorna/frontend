@@ -169,15 +169,21 @@
                       </router-link>
                     </li>
                     <li>
-                      <router-link to="/design-using-templates" @click.native="scrollToTop()">
+                      <router-link to="/stationery-design" @click.native="scrollToTop()">
                         <img src="assets/images/menu/design-template.jpg" />
-                        <span>Design Using Templates</span>
+                        <span>Stationery Design</span>
                       </router-link>
                     </li>
                     <li>
                       <router-link to="/smm" @click.native="scrollToTop()">
                         <img src="assets/images/menu/smm.jpg" />
                         <span>Social Media Marketing</span>
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link to="/website-development" @click.native="scrollToTop()">
+                        <img src="assets/images/menu/smm.jpg" />
+                        <span>Website Development</span>
                       </router-link>
                     </li>
                   </ul>
@@ -293,7 +299,7 @@
           <div class="hamburger">
             <div class="header-right-wrap header-right-flex">
               <div class="same-style header-wishlist">
-                <a href="login-register.html">
+                <a href="/login-register">
                   <i class="dlicon users_man-23"></i>
                 </a>
               </div>
@@ -344,12 +350,12 @@
               v-for="(product,key,index) in getCartProducts"
               :key="index"
             >
-              <div class="cart-img">
+              <div class="cart-img d-none">
                 <a href="#">
                   <img src="/assets/images/cart/cart-1.jpg" alt />
                 </a>
               </div>
-              <div class="cart-title">
+              <div class="cart-title ml-0">
                 <h4>
                   <a href="#">{{product.label}}</a>
                 </h4>
@@ -359,22 +365,16 @@
                 <span v-else>1 × ₹{{product.price}} = ₹{{product.price}}</span>
               </div>
               <div class="cart-delete">
-                <a href="#" @click="_removeProductFromCart(index)">×</a>
+                <a href="javascript:" @click="_removeProductFromCart(index)">×</a>
               </div>
             </li>
           </ul>
           <div class="cart-total">
-            <h4>
-              Subtotal:
-              <span>₹{{getCartPrice}}</span>
-            </h4>
+            <h4> Subtotal: <span>₹{{getCartPrice}}</span></h4>
           </div>
           <div class="cart-checkout-btn">
             <a class="btn-hover cart-btn-style" href="cart.html" v-if="false">view cart</a>
-            <a
-              class="no-mrg btn-hover cart-btn-style"
-              @click.prevent="navigateToCheckout()"
-            >checkout</a>
+            <a class="no-mrg btn-hover cart-btn-style" @click.prevent="navigateToCheckout()">checkout</a>
           </div>
         </div>
       </div>
@@ -478,6 +478,61 @@ export default {
       });
     });
 
+    /*----------------------------
+        Cart Plus Minus Button
+    ------------------------------ */
+    var CartPlusMinus = $('.cart-plus-minus');
+    CartPlusMinus.prepend('<div class="dec qtybutton">-</div>');
+    CartPlusMinus.append('<div class="inc qtybutton">+</div>');
+    $(".qtybutton").on("click", function() {
+        var $button = $(this);
+        var oldValue = $button.parent().find("input").val();
+        if ($button.text() === "+") {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            // Don't allow decrementing below zero
+            if (oldValue > 0) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 1;
+            }
+        }
+        $button.parent().find("input").val(newVal);
+    });
+
+        jQuery('.pro-dec-big-img-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            draggable: false,
+            fade: false,
+            asNavFor: '.product-dec-slider , .product-dec-slider-2',
+        });
+
+        jQuery('.product-dec-slider-2').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.pro-dec-big-img-slider',
+            dots: false,
+            focusOnSelect: true,
+            fade: false,
+            prevArrow: '<span class="pro-dec-icon pro-dec-prev"><i class="dlicon arrows-1_tail-left"></i></span>',
+            nextArrow: '<span class="pro-dec-icon pro-dec-next"><i class="dlicon arrows-1_tail-right"></i></span>',
+            responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                        
+                    }
+                },
+                {
+                    breakpoint: 420,
+                    settings: {
+                        autoplay: true,
+                        slidesToShow: 3,
+                    }
+                }
+            ]
+        });
     
     /*====== SidebarSearch ======*/
     function sidebarSearch(me) {

@@ -18,7 +18,7 @@
       <div class="container-fluid">
         <div class="row gutters-1">
           <div class="col-12 col-lg-5">
-            <div class="product-images-wrap d-none d-lg-block">
+            <div class="product-images-wrap" v-if="windowWidth >= '992'">
               <div class="easyzoom-style mb-10" v-for="index in 6" :key="index">
                 <div class="easyzoom easyzoom--overlay">
                   <a :href="getImageUrl(index)">
@@ -34,7 +34,7 @@
 
             <!-- For Mobile -->
 
-            <div class="product-details-tab d-lg-none">
+            <div class="product-details-tab" v-if="windowWidth <= '991'">
               <div class="pro-dec-big-img-slider" ref="class_pro_dec_big_img_slider">
                 <div class="easyzoom-style" v-for="index in 6" :key="index">
                   <div class="easyzoom easyzoom--overlay">
@@ -126,13 +126,6 @@
                       </div>
                     </div>
                   </div>
-                  <p>
-                    <i class="dlicon emoticons_smile"></i> 100% Happiness Guarantee
-                    <span class="quote">
-                      If You are not happy with your order contact us and we'll make it right...
-                      <router-link to="/clients-happiness-policy">more</router-link>
-                    </span>
-                  </p>
                   <div class="social-icon-style-3 d-none">
                     <a class="facebook" href="#">
                       <i class="fa fa-facebook"></i>
@@ -390,16 +383,24 @@ export default {
     BcardDesign,
     BcardSummary
   },
-  data() {
-    return {};
+  data: function() {
+    return {
+      windowWidth: 0,
+    }
   },
   methods: {
     ...mapActions({
       setProductJson: types.ACTION_BCARDS_MYPRODUCTJSON,
-      }),
+    }),
     getImageUrl(index){
       return '/product-images/'+this.getMyProductJson.wp_id+'/'+index+'.jpg';
+    },
+    getWindowWidth(event) {
+        this.windowWidth = document.documentElement.clientWidth;
     }
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.getWindowWidth);
   },
   computed: {
     ...mapGetters({
@@ -420,39 +421,12 @@ export default {
         //eventBus.$emit('transparentHeaderClass',false);
 
         console.log(this.$refs);
-        jQuery('.pro-dec-big-img-slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            draggable: false,
-            fade: false,
-            asNavFor: '.product-dec-slider , .product-dec-slider-2',
-        });
+      this.$nextTick(function() {
+        window.addEventListener('resize', this.getWindowWidth);
 
-        jQuery('.product-dec-slider-2').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: '.pro-dec-big-img-slider',
-            dots: false,
-            focusOnSelect: true,
-            fade: false,
-            prevArrow: '<span class="pro-dec-icon pro-dec-prev"><i class="dlicon arrows-1_tail-left"></i></span>',
-            nextArrow: '<span class="pro-dec-icon pro-dec-next"><i class="dlicon arrows-1_tail-right"></i></span>',
-            responsive: [{
-                    breakpoint: 767,
-                    settings: {
-                        
-                    }
-                },
-                {
-                    breakpoint: 420,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 3,
-                    }
-                }
-            ]
-        });
+        //Init
+        this.getWindowWidth()
+      })
     }
 };
 </script>

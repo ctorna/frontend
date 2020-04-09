@@ -698,6 +698,9 @@ h1, h2, h3 {
 .tile-media-wrap figure {
     margin: 0;
 }
+.tile .tile-media-wrap img {
+    max-width: 100%;
+}
 .tile:hover .tile-media-wrap img {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -828,6 +831,13 @@ h1, h2, h3 {
     opacity: 0.6;
     text-decoration: line-through;
 }
+.product-details-quality .cart-plus-minus .qtybutton.dec,
+.product-details-quality .cart-plus-minus .qtybutton.inc {
+    top: 0;
+    line-height: 54px;
+    font-size: 38px;
+    font-weight: 500;
+}
 .mfp-figure:after {
     background-color: #fff;
 }
@@ -864,8 +874,9 @@ h1, h2, h3 {
     max-width: 100%;
 }
 .your-order-area .your-order-wrap .condition-wrap .condition-form input {
-    height: auto;
-    width: auto;
+    height: 15px;
+    width: 15px;
+    top: 0;
 }
 .your-order-wrap .payment-method .radio {
     background-color: #ebebeb;
@@ -910,6 +921,10 @@ h1, h2, h3 {
 .blog-details-content img {
     max-width: 100%;
 }
+.blog-details-content .blog-details-paragraph h1 {
+    font-family: 'playfair Display', sans-serif;
+    font-size: 40px;
+}
 .blog-details-content .blog-details-paragraph h2,
 .blog-details-content .blog-details-paragraph h3 {
     font-weight: 600;
@@ -921,6 +936,21 @@ h1, h2, h3 {
 }
 .blog-details-content .blog-details-paragraph p {
     margin-bottom: 10px;
+}
+.blog-details-content .blog-details-paragraph ul,
+.blog-details-content .blog-details-paragraph ol,
+.blog-details-content .blog-details-paragraph dl {
+    font-size: 16px;
+    color: #535353;
+    line-height: 1.8;
+}
+.blog-details-content .blog-details-paragraph .blog-details-middle-img {
+    margin: 30px 0 30px;
+    text-align: center;
+}
+.blog-details-content .blog-details-paragraph .blog-details-middle-img img {
+    width: auto;
+    margin: 0 auto;
 }
 .blog-details-content .blog-comments-area .blog-comments-wrap .single-blog-bundel .single-blog-comment .blog-comment-img img {
     border-radius: 50px;
@@ -1251,6 +1281,9 @@ h1, h2, h3 {
     }
     .three-section p {
         font-size: 18px;
+    }
+    .blog-details-content .blog-details-paragraph h1 {
+        font-size: 70px;
     }
 }
 @media (min-width: 992px) {

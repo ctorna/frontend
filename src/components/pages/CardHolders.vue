@@ -70,24 +70,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-4 mt-4 mt-sm-0">
-                                <div class="pro-details-sidebar-active slider-nav-style-3 owl-carousel">
-                                    <div class="single-pro-details-sidebar">
-                                        <a href="#"><img src="assets/images/product-details/pro-details-sidebar-1.jpg" alt=""></a>
-                                        <div class="pro-details-sidebar-content">
-                                            <h4><a href="#">NEW <br>LONDON</a></h4>
-                                            <p>Off 20% for all</p>
-                                        </div>
-                                    </div>
-                                    <div class="single-pro-details-sidebar">
-                                        <a href="#"><img src="assets/images/product-details/pro-details-sidebar-2.jpg" alt=""></a>
-                                        <div class="pro-details-sidebar-content">
-                                            <h4><a href="#">NEW <br>LONDON</a></h4>
-                                            <p>Off 20% for all</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <page-sidebar></page-sidebar>
                         </div>
                     </div>
                 </div>
@@ -110,7 +93,9 @@
                                         <div class="row">
                                             <div class="col-md-5 col-lg-4">
                                                 <div class="pro-details-banner">
-                                                    <a class="video-popup" href="https://player.vimeo.com/video/181061053?autoplay=1&amp;byline=0&amp;collections=0"><img src="assets/images/product-details/pro-details-banner.jpg" alt=""></a>
+                                                    <a class="video-popup" href="https://www.youtube.com/watch?v=qzgTmJEaVGs">
+                                                        <img src="https://via.placeholder.com/1200x800" alt="">
+                                                    </a>
                                                 </div>
                                             </div>
                                             <div class="col-md-7 col-lg-8">
@@ -229,5 +214,16 @@
                 </div>
             </div>
         </div>
-  </section>
+    </section>
 </template>
+<script>
+    import PageSidebar from "../shared/Sidebar.vue";
+    export default {
+        data(){
+            return {}
+        },
+        components:{
+            PageSidebar   
+        }
+    }
+</script>

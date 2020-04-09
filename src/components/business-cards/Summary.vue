@@ -4,10 +4,6 @@
     <table class="table">
         <tbody>
             <tr>
-                <th>Per card</th>
-                <td>₹{{getMyPPC()}}</td>
-            </tr>
-            <tr>
                 <th>Paper</th>
                 <td>{{getMyproduct().paper}}</td>
             </tr>
@@ -18,10 +14,6 @@
             <tr>
                 <th>Printing</th>
                 <td>{{getMyproduct().side}}</td>
-            </tr>
-            <tr>
-                <th>Quantity</th>
-                <td>{{getMyproduct().quantity}}</td>
             </tr>
             <tr v-for="(treat,key) in $store.state.product.myProduct.treatments" :key="key">
                 <th>{{key|summaryShow}}</th>
@@ -43,8 +35,16 @@
                 <th>{{key|summaryShow}}</th>
                 <td>{{addon.name|summaryShow}}<span>₹{{addon.price}}</span></td>
             </tr>
+            <tr>
+                <th>Per card</th>
+                <td>₹{{getMyPPC()}}</td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td>{{getMyproduct().quantity}}</td>
+            </tr>
             <tr class="price">
-                <th>Price</th>
+                <th>Total</th>
                 <td>₹{{getMyPrice()}}</td>
             </tr>
         </tbody>
@@ -53,6 +53,7 @@
         <a title="Create Design" href="#" class="btn btn-secondary" v-if="false">Create Design</a>
         <a title="Add to cart" href="#" @click.prevent="addProductToCart()" class="btn btn-primary">Add to cart</a>
     </div>
+    <p class="mt-3"><i class="dlicon emoticons_smile"></i> 100% Happiness Guarantee. If You are not happy with your order contact us and we'll make it right... <a href="/clients-happiness-policy">more</a></span></p>
 </div>
 </template>
 <script>

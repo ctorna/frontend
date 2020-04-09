@@ -1,63 +1,39 @@
 <template>
-  <div class="col-12 col-sm-4 mt-4 mt-sm-0">
-                <div class="pro-details-sidebar-active slider-nav-style-3 owl-carousel" ref="class_pro_details_sidebar_active">
-                  <div class="single-pro-details-sidebar">
-                    <a href="#">
-                      <img src="assets/images/product-details/pro-details-sidebar-1.jpg" alt />
+    <div class="col-12 col-sm-4 mt-4 mt-sm-0">
+        <h3>Popular Products</h3>
+        <div class="tile h-auto">
+            <div class="tile-body">
+                <div class="tile-media-wrap">
+                    <a href="/bcard/15">
+                        <figure>
+                            <img src="/product-images/808/1.jpg" alt="Foil business card">
+                        </figure>
                     </a>
-                    <div class="pro-details-sidebar-content">
-                      <h4>
-                        <a href="#">
-                          NEW
-                          <br />LONDON
-                        </a>
-                      </h4>
-                      <p>Off 20% for all</p>
-                    </div>
-                  </div>
-                  <div class="single-pro-details-sidebar">
-                    <a href="#">
-                      <img src="assets/images/product-details/pro-details-sidebar-2.jpg" alt />
-                    </a>
-                    <div class="pro-details-sidebar-content">
-                      <h4>
-                        <a href="#">
-                          NEW
-                          <br />LONDON
-                        </a>
-                      </h4>
-                      <p>Off 20% for all</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <div class="tile-text-wrap">
+                    <h2 class="title">Foil business card</h2>
+                </div>
+            </div>
+            <div class="tile-footer">
+                <a href="/bcard/15">Buy Now</a>
+            </div>
+        </div>
+        <div class="tile h-auto mt-20">
+            <div class="tile-body">
+                <div class="tile-media-wrap">
+                    <a href="/bcard/7">
+                        <figure>
+                            <img src="/product-images/1533/1.jpg" alt="Kraft business card">
+                        </figure>
+                    </a>
+                </div>
+                <div class="tile-text-wrap">
+                    <h2 class="title">Kraft business card</h2>
+                </div>
+            </div>
+            <div class="tile-footer">
+                <a href="/bcard/7">Buy Now</a>
+            </div>
+        </div>
+    </div>
 </template>
-<script>
-export default {
-  mounted(){
-     /* Product details sidebar active */
-    jQuery('.pro-details-sidebar-active').owlCarousel({
-        loop: true,
-        nav: true,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-        autoplay: false,
-        autoplayTimeout: 5000,
-        item: 1,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            992: {
-                items: 1
-            }
-        }
-    })
-  }
-}
-</script>

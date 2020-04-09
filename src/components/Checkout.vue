@@ -77,7 +77,7 @@
                           Country
                           <abbr class="required" title="required">*</abbr>
                         </label>
-                        <select class="select-active" v-model="customer.country">
+                        <select class="select-active form-control" v-model="customer.country">
                           <option value="">....</option>
                           <option v-for="(country,key) in countries" :key="key" :value="key">{{country}}</option>
                         </select>
@@ -112,7 +112,7 @@
                           District
                           <abbr class="required" title="required">*</abbr>
                         </label>
-                        <select class="select-active" v-model="customer.state">
+                        <select class="select-active form-control" v-model="customer.state">
                           <option value="">....</option>
                           <option v-for="(state,key) in states" :key="key" :value="key">{{state}}</option>
                         </select>
@@ -177,8 +177,7 @@
                               <span>₹{{product.qPrice.price}}</span>
                             </template>
                             <template v-else>
-                              {{product.label}} X 1
-                              <span>₹{{product.price}}</span>
+                              {{product.label}} X 1 <span>₹{{product.price}}</span>
                             </template>
                           </li>
                         </ul>
@@ -187,21 +186,14 @@
                       <div class="your-order-info order-subtotal">
                         <ul>
                           <li v-for="(price,tax) in getTaxSlabs" :key="tax">
-                            
-                              {{tax}}% IGST
-                              <span>₹{{price}}</span>
-                            
-                          
-                           
+                              {{tax}}% IGST <span>₹{{price}}</span>
                           </li>
-                          
                         </ul>
                       </div>
                       <div class="your-order-info order-total">
                         <ul>
                           <li>
-                            Total
-                            <span>₹{{getCartPrice}}</span>
+                            Total <span>₹{{getCartPrice}}</span>
                           </li>
                         </ul>
                       </div>
@@ -223,14 +215,13 @@
                         </div-->
                       </div>
                     </div>
-                    <div class="condition-wrap">
-                      <div class="condition-form mb-25">
-                        <input type="checkbox" checked="checked" v-model="termsChecked"/>
-                        <span>
-                          I have read and agree to the website
-                          <a href="terms-conditions.html">terms and conditions</a>
-                          <span class="star">*</span>
-                        </span>
+                    <div class="condition-wrap mt-0">
+                      <div class="condition-form">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input type="checkbox" checked="checked" class="form-check-input" v-model="termsChecked"/>I have read and agree to the website <a href="/terms-and-conditions"><u>terms and conditions</u></a><span class="text-danger">*</span>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
